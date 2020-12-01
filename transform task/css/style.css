@@ -1,0 +1,171 @@
+body{
+    margin: 0;
+    padding: 0;
+    font-family: 'Baloo 2', cursive;
+}
+
+h1, h2, h3, h4, h5, h6, a, p {
+    margin: 0;
+    padding: 0;
+    text-decoration: none;
+}
+
+.container{
+    width: 960px;
+    margin: 0 auto;
+}
+
+header{
+    padding: 30px 0;
+    background: rgb(39, 216, 39);
+}
+
+.header{
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+}
+
+.header-links{
+    padding: 10px 30px;
+    background: rgb(45, 190, 45);
+    border: 2px solid  transparent;
+    border-radius: 8px;
+    color: #ffffff;
+    transition: all ease .5s;
+}
+.header-links:hover{
+    padding: 10px 30px;
+    background: rgb(39, 216, 39);
+    border: 2px solid  rgb(45, 201, 45);
+}
+
+main{
+    background: #ffffff;
+}
+.main-inner{
+    background: #fcf6f6;
+    padding: 50px 30px;
+    box-sizing: border-box;
+}
+
+.main-inner h1{
+    font-size: 25px;
+    margin-bottom: 25px;
+}
+
+.main-inner p{
+    font-size: 16px;
+    word-break: keep-all;
+    text-align: justify;
+    margin-bottom: 35px;
+}
+
+.info-cols{
+    display: flex;
+    align-items: flex-start;
+    justify-content: space-between;
+}
+
+.info-cols p{
+    width: 30%;
+}
+.img-area{
+    width: 70%;
+    margin-right: 35px;
+    position: relative;
+    transform: scale(1);
+    overflow: hidden;
+   
+    
+}
+.img-area:hover img{
+    transform: scale(2);
+}
+
+.img-area img{
+    width: 100%;
+    display: block;
+    transition: all ease 3s;
+}
+
+.banner{
+    position: absolute;
+    bottom: 0;
+    left: 0;
+    background: #000000;
+    opacity: .7;
+    height: 60px;
+    padding: 15px;
+    transform: translateY(90px);
+    transition: all ease 1s;
+}
+
+.img-area:hover .banner{
+    transform: translateY(0);
+}
+
+
+
+.banner p{
+    width: 100%;
+    color: #fcf6f6;
+    font-size: 15px;
+}
+
+.banner .banner-btn{
+    margin-left: 25px;
+    padding: 0 10px;
+    background: rgb(57, 202, 57);
+    border-radius: 8px;
+}
+
+.banner .banner-btn:hover{
+    background-color: green;
+    color: #ffffff;
+}
+
+.way{
+    width: 100%;
+}
+
+.circle {
+    width: 200px;
+    height: 200px;
+    border-radius: 50%;
+    background: #c1c1c1;
+    position: relative;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    transition: all ease 2s;
+    
+}
+.circle p {
+    transition: all ease 2s;
+}
+.circle:hover p{
+    transform: rotate(1360deg);
+}
+
+.way:hover .circle{
+    transform: translateX(1000px);
+}
+.way:hover p{
+    transform: rotate(5000deg);
+}
+
+footer{
+    background: rgb(96, 96, 235);
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    padding: 25px 0;
+}
+
+footer p{
+    font-size: 14px;
+    color: #e7e0e0;
+}
+
+
