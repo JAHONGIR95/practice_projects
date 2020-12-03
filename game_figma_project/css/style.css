@@ -1,4 +1,15 @@
 @font-face {
+    font-family: 'Bebas Neue';
+    src: url('../fonts/BebasNeue-Regular.eot');
+    src: url('../fonts/BebasNeue-Regular.eot') format('embedded-opentype'),
+        url('../fonts/BebasNeue-Regular.woff') format('woff'),
+        url('../fonts/BebasNeue-Regular.ttf') format('truetype');
+    font-weight: normal;
+    font-style: normal;
+    font-display: swap;
+}
+
+@font-face {
     font-family: 'Open Sans';
     src: url('../fonts/OpenSans-Bold.eot');
     src: url('../fonts/OpenSans-Bold.eot') format('embedded-opentype'),
@@ -46,6 +57,7 @@ body{
     margin: 0;
     padding: 0;
     font-family: 'Open Sans';
+    font-family: 'Bebas Neue';
 }
 
 h1, h2, h3, h4, h5, h6, a, p{
@@ -60,22 +72,22 @@ h1, h2, h3, h4, h5, h6, a, p{
 }
 
 section{
-    background: url(../images/bg1.jpg);
+
+    background: radial-gradient(189.96% 61.18% at 50% 38.82%, rgba(255, 181, 72, 0) 0%, rgba(52, 44, 29, 0.80319) 73.22%, #08090A 99.74%) , url(../images/bg1.jpg);
     background-repeat: no-repeat;
     background-size: cover;
     background-position: center;
-    height: 100vh;
+    /* height: 100vh; */
 }
 
 .section1{
-
 }
 
 .header-inner{
     display: flex;
     align-items: center;
     justify-content: space-between;
-    margin-bottom: 237px;
+    margin-bottom: 200px;
 }
 
 .header-left{
@@ -93,6 +105,7 @@ section{
 } */
 
 .header-middle .header-link{
+    font-family: Open Sans;
     font-style: normal;
     font-weight: bold;
     font-size: 12px;
@@ -117,6 +130,7 @@ section{
     display: block;
 }
 .header-right .dropdown .dropdown-menu{
+    font-family: Open Sans;
     font-style: normal;
     font-weight: bold;
     font-size: 12px;
@@ -157,6 +171,7 @@ section{
 }
 
 .header-right .dropdown .dropdown-block .dropdown-link{
+    font-family: Open Sans;
     display: block;
     font-style: normal;
     font-weight: bold;
@@ -202,11 +217,13 @@ section{
     align-items: center;
     justify-content: center;
     flex-direction: column;
+    margin-bottom: 363px;
 }
 
 .centeral-banner .banner-title{
+    font-family: Bebas Neue;
     font-style: normal;
-    font-weight: 700;
+    font-weight: bold;
     font-size: 80px;
     line-height: 80px;
     text-align: center;
@@ -217,6 +234,7 @@ section{
 }   
 
 .centeral-banner .banner-text{
+    font-family: Bebas Neue;
     font-style: normal;
     font-weight: bold;
     font-size: 24px;
@@ -227,6 +245,8 @@ section{
 }
 
 .centeral-banner .golden-btn{
+    
+    font-family: Open Sans;
     padding: 17.5px 17px; 
     background: linear-gradient(194.68deg, #FFB548 11.27%, #F3AF34 90.4%);
     border-radius: 4px;
@@ -246,3 +266,202 @@ section{
     transform: matrix(1, 0, 0.04, 1, 0, 0);
     margin: 0 12px;
 }
+
+.story{
+    font-family: Open Sans;
+    display: flex;
+    justify-content: center;
+    font-style: normal;
+    font-weight: bold;
+    font-size: 12px;
+    line-height: 22px;
+    text-align: justify;
+    text-transform: uppercase;
+    color: #FFFFFF;
+    padding-bottom: 60px;
+    position: relative;
+}
+
+.story::before{
+    content: "";
+    position: absolute;
+    right: 0;
+    left: 0;
+    top: 25px;
+    margin: auto;
+    width: 20.25px;
+    height: 8.17px;
+    background: url(../images/scroll-down.svg);
+    background-repeat: no-repeat;
+    background-size: contain;
+    background-position: center;
+}
+/* ****************************************************************** */
+
+.section2{
+    background: radial-gradient(136.03% 54.57% at 50% 48.04%, rgba(255, 255, 255, 0) 0%, rgba(0, 0, 0, 0) 60.63%, #080A0B 99.74%), url(../images/bg2-real.jpg);
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-position: center;
+    /* height: 100vh; */
+
+}
+
+.section2-inner{
+    padding-top: 190px;
+    padding-bottom: 230px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.section2-left{
+    width: 50%;
+}
+
+/* .section2-left-top{
+    
+} */
+
+.section2-left-top .left-top-text{
+    font-family: Bebas Neue;
+    font-style: normal;
+    font-weight: bold;
+    font-size: 24px;
+    line-height: 24px;
+    letter-spacing: 2px;
+    color: #FFFFFF;
+    margin-bottom: 18px;
+}
+
+.section2-left-top .left-top-title{
+    font-family: Bebas Neue;
+    font-style: normal;
+    font-weight: bold;
+    font-size: 80px;
+    line-height: 80px;
+    letter-spacing: 3px;
+    text-transform: uppercase; 
+    color: #FFFFFF;
+    width: 410px;
+    margin-bottom: 72px;
+}
+
+.section2-left-bottom{
+    margin-left: 188px;
+}
+
+.section2-left-bottom .left-bottom-difination{
+    width: 365px;
+    font-family: Open Sans;
+    font-style: normal;
+    font-weight: normal;
+    font-size: 18px;
+    line-height: 22px;
+    text-align: justify;
+    color: #FFFFFF;
+}
+
+.section2-left-bottom .left-bottom-difination .text-btn{
+    color: #ffffff;
+    position: relative;
+    z-index: 0;
+}
+
+.section2-left-bottom .left-bottom-difination .text-btn::before{
+    content: "";
+    position: absolute;
+    bottom: 0;
+    right: 0;
+    left: 0;
+    height: 6px;
+    width: 100%;
+    margin: auto;
+    background-color: #FFB548;
+    z-index: -1;
+    transition: all ease .5s;
+
+    
+}
+.section2-left-bottom .left-bottom-difination .text-btn:hover::before{
+    height: 24px;
+}
+
+
+.section2-right{
+    width: 50%;
+}
+
+.image-section{
+    position: relative;
+    height: 610.52px;
+    width: 502.76px;
+
+}
+
+.image-section .section2-image1{
+    width: 502.76px;
+    height: 610.52px;
+    object-fit: cover;
+    position: absolute;
+    z-index: 3;
+    border-radius: 10px;
+}
+
+.image-section .section2-image2{
+    position: absolute;
+    width: 438.27px;
+    height: 563.24px;
+    opacity: 0.9;
+    z-index: 2;
+    top: 0;
+    bottom: 0;
+    margin: auto;
+    left: 100px;
+    border-radius: 10px;
+}
+
+.image-section .section2-image3{
+    position: absolute;
+    width: 438.27px;
+    height: 511.62px;
+    opacity: 0.8;
+    top: 0;
+    bottom: 0;
+    margin: auto;
+    left: 130px;
+    z-index: 1;
+    border-radius: 10px;
+}
+
+.image-section .dots{
+    position: absolute;
+    bottom: 33px;
+    left: 100px;
+    right: 0;
+    margin: auto;
+    z-index: 5;
+    width: 100%;
+    display: flex;
+    align-items: center;
+    
+}
+
+.image-section .dots .dot{
+    width: 14px;
+    height: 14px;
+    border: 1.30637px solid #FFFFFF;
+    border-radius: 50%;
+    display: inline-block;
+    margin-right: 55px;
+    
+}
+
+.image-section .dots .dot.is-full{
+    width: 14px;
+    height: 14px;
+    background: #FFFFFF;
+    border: 1.30637px solid #FFFFFF;
+    border-radius: 50%;
+}
+
