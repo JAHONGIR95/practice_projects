@@ -1,0 +1,655 @@
+@font-face {
+    font-family: 'Galien';
+    src: url('../fonts/Galien-Regular.eot');
+    src: url('../fonts/Galien-Regular.eot') format('embedded-opentype'),
+        url('../fonts/Galien-Regular.woff') format('woff'),
+        url('../fonts/Galien-Regular.ttf') format('truetype');
+    font-weight: normal;
+    font-style: italic;
+    font-display: swap;
+}
+
+@font-face {
+    font-family: 'Galien';
+    src: url('../fonts/Galien-Regular_1.eot');
+    src: url('../fonts/Galien-Regular_1.eot') format('embedded-opentype'),
+        url('../fonts/Galien-Regular_1.woff') format('woff'),
+        url('../fonts/Galien-Regular_1.ttf') format('truetype');
+    font-weight: normal;
+    font-style: italic;
+    font-display: swap;
+}
+
+@font-face {
+    font-family: 'Galien';
+    src: url('../fonts/Galien-Regular_2.eot');
+    src: url('../fonts/Galien-Regular_2.eot') format('embedded-opentype'),
+        url('../fonts/Galien-Regular_2.woff') format('woff'),
+        url('../fonts/Galien-Regular_2.ttf') format('truetype');
+    font-weight: normal;
+    font-style: italic;
+    font-display: swap;
+}
+
+@font-face {
+    font-family: 'Gilroy';
+    src: url('../fonts/Gilroy-ExtraBold.eot');
+    src: url('../fonts/Gilroy-ExtraBold.eot') format('embedded-opentype'),
+        url('../fonts/Gilroy-ExtraBold.woff') format('woff'),
+        url('../fonts/Gilroy-ExtraBold.ttf') format('truetype');
+    font-weight: 800;
+    font-style: normal;
+    font-display: swap;
+}
+
+@font-face {
+    font-family: 'Gilroy';
+    src: url('../fonts/Gilroy-Light.eot');
+    src: url('../fonts/Gilroy-Light.eot') format('embedded-opentype'),
+        url('../fonts/Gilroy-Light.woff') format('woff'),
+        url('../fonts/Gilroy-Light.ttf') format('truetype');
+    font-weight: 300;
+    font-style: normal;
+    font-display: swap;
+}
+
+
+body{
+    margin: 0;
+    padding: 0;
+    font-family: 'Galien';
+    font-family: 'Gilroy';
+
+}
+
+h1, h2, h3, h4, h5, h6, a, p{
+    margin: 0;
+    padding: 0;
+    text-decoration: none;
+}
+
+.container{
+    width: 940px;
+    margin: 0 auto;
+}
+
+.container2{
+    width: 880px;
+}
+/*  headerd **************************** */
+
+header{
+
+}
+
+.header-top{
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    padding: 48px 83px;
+
+}
+
+.header-top .logo{
+    width: 48px;
+    height: 32px;
+    object-fit: contain;
+}
+
+.header-top .hamburger-menu{
+    width: 24px;
+    height: 16px;
+    object-fit: contain;
+}
+
+.header-main{
+    width: 100%px;
+    height: 250px;
+    background: url(../images/Mask-Group.jpg);
+    background-position: center;
+    background-size: 100% 250px;
+    background-repeat: no-repeat;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-direction: column;
+    margin-bottom: 56px;
+}
+
+.header-title{
+    font-family: 'Gilroy';
+    font-size: 44px;
+    line-height: 74px;
+    text-align: center;
+    letter-spacing: 0.04em;
+    color: #FFFFFF;
+    margin-bottom: 16px;
+}
+
+.header-text{
+    width: 780px;
+    font-family: Gilroy;
+    font-size: 20px;
+    line-height: 30px;
+    text-align: center;
+    letter-spacing: 0.04em;
+    color: rgba(255, 255, 255, 0.4);
+}
+
+.form{
+    display: flex;
+    background: #F4F4F4;
+    border-radius: 10px;
+    padding: 20px;
+    margin-bottom: 50px;
+}
+form img{
+    margin-right: 30px;
+}
+input[type=search]{
+    width: 100%;
+    outline: none;
+    border: none;
+    background: #F4F4F4;
+    font-family: Gilroy;
+    font-size: 16px;
+    line-height: 19px;
+    color: #1F3F68;
+    /* opacity: 0.6; */
+    /* position: relative; */
+}
+
+/*  next **************************************** */
+
+.status{
+    font-family: Gilroy;
+    font-size: 20px;
+    line-height: 25px;
+    letter-spacing: 0.04em;
+    color: #356EAD;
+    opacity: 0.8;
+    margin-bottom: 32px;
+}
+/* next ******************************************* */
+
+.big-article{
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    margin-bottom: 33px;
+}
+
+/* .big-article .section-left{
+
+} */
+
+.section-left .title{
+    width: 380px;
+    font-family: Galien;
+    font-size: 48px;
+    line-height: 58px;
+    letter-spacing: 0.04em;
+    color: #1F3F68;
+    margin-bottom: 32px;
+}
+
+.section-left .text{
+    width: 380px;
+    font-family: Gilroy;
+    font-size: 16px;
+    line-height: 26px;
+    letter-spacing: 0.04em;
+    color: #000000;
+    opacity: 0.6;
+    margin-bottom: 30px;
+}
+
+.section-left .article-info{
+    display: flex;
+    align-items: center;
+}
+
+.section-left .article-info .article-info-left{
+    margin-right: 100px;
+}
+
+.section-left .article-info .article-info-left .author {
+    font-family: Gilroy;
+    font-size: 14px;
+    line-height: 24px;
+    letter-spacing: 0.04em;
+    color: #1F3F68;
+    margin-bottom: 4px;
+}
+
+.section-left .article-info .article-info-left .date{
+    font-family: Gilroy;
+    font-size: 14px;
+    line-height: 24px;
+    letter-spacing: 0.04em;
+    color: #1F3F68;
+    opacity: 0.4;
+}
+
+/* .section-left .article-info .article-info-right{
+
+} */
+
+.section-left .article-info .article-info-right .post{
+    width: 18px;
+    height: 22px;
+    object-fit: contain;
+    margin-right: 38px;
+}
+
+.section-left .article-info .article-info-right .share{
+    width: 18px;
+    height: 20px;
+    object-fit: contain;
+}
+
+.big-article .section-right{
+    width: 540px;
+    height: 380px;
+    background: url(../images/main-image.jpg);
+    background-repeat: no-repeat;
+    background-size: contain;
+    background-position: center;
+}
+/* next ******************************* */
+
+article{
+    margin-bottom: 56px;
+    display: block;  
+}
+
+.article-inner{
+    border-bottom: 1px solid rgba(0, 0, 0, 0.2);
+}
+
+.article-wrapper{
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    margin-bottom: 54px;
+}
+
+.article-col{
+    width: 300px;
+}
+
+.article-col .article-image{
+    width: 300px;
+    height: 200px;
+    object-fit: contain;
+    margin-bottom: 16px;
+}
+
+.article-col .article-title{
+    font-family: Galien;
+    font-size: 28px;
+    line-height: 38px;
+    letter-spacing: 0.04em;
+    color: #1F3F68;
+    margin-bottom: 16px;
+}
+
+.article-col .article-text{
+    font-family: Gilroy;
+    font-size: 16px;
+    line-height: 26px;
+    letter-spacing: 0.04em;
+    color: rgba(0, 0, 0, 0.6);
+    width: 297px;
+    margin-bottom: 16px;
+}
+
+.article-col .article-info{
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+}
+
+.article-col .article-info .article-info-left{
+
+}
+
+.article-col .article-info .article-info-left .author{
+    margin-bottom: 4px;
+    font-family: Gilroy;
+    font-size: 14px;
+    line-height: 24px;
+    letter-spacing: 0.04em;
+    color: #1F3F68;
+}   
+
+.article-col .article-info .article-info-left .date{
+    font-family: Gilroy;
+    font-size: 14px;
+    line-height: 24px;
+    letter-spacing: 0.04em;
+    color: rgba(0, 0, 0, 0.4);
+}
+
+.article-col .article-info .article-info-right {
+    display: flex;
+}
+
+.article-col .article-info .article-info-right .post{
+    width: 18px;
+    height: 22px;
+    object-fit: contain;
+    margin-right: 38px;
+}
+
+.article-col .article-info .article-info-right .share{
+    width: 18px;
+    height: 19px;
+    object-fit: contain;
+}
+
+article .article-inner .view-all{
+    font-family: 'Gilroy';
+    display: block;
+    font-size: 16px;
+    font-weight: 600;
+    line-height: 20px;
+    text-align: right;
+    letter-spacing: 0.04em;
+    text-transform: uppercase;
+    color: #356EAD;
+    margin-bottom: 24px;
+    opacity: 1;
+}
+/* next ************************************** */
+
+.all-articles{
+    margin-bottom: 96px;
+}
+
+.article-row{
+    display: flex;
+    margin-bottom: 32px;
+}
+
+.article-row-right .row-image{
+    width: 300px;
+    height: 200px;
+    object-fit: contain;
+    margin-right: 20px;
+}
+
+/* .article-row-left{
+    
+} */
+
+.article-row-left .row-title{
+    font-family: 'Galien';
+    font-size: 28px;
+    line-height: 38px;
+    letter-spacing: 0.04em;
+    color: #1F3F68;
+    margin-bottom: 16px;
+}
+
+.article-row-left .row-text{
+    font-family: 'Gilroy';
+    font-size: 16px;
+    line-height: 26px;
+    letter-spacing: 0.04em;
+    color: rgba(0, 0, 0, 0.6);
+    margin-bottom: 14px;
+}
+
+.article-info{
+    display: flex;
+    align-items: center;
+    justify-content: flex-start;
+}
+
+.article-info-left{
+    margin-right: 100px;
+}
+.article-info-left .author{
+    font-family: Gilroy;
+    font-size: 14px;
+    line-height: 24px;
+    letter-spacing: 0.04em;
+    color: #1F3F68;
+}
+.article-info-left .date{
+    font-family: Gilroy;
+    font-size: 14px;
+    line-height: 24px;
+    letter-spacing: 0.04em;
+    color: rgba(0, 0, 0, 0.4);
+}
+
+/* .article-info-right{
+
+} */
+
+.article-info-right .post{
+    width: 18px;
+    height: 22px;
+    object-fit: contain;
+    margin-right: 38px;
+}
+
+.article-info-right .share{
+    width: 18px;
+    height: 19px;
+    object-fit: contain;
+}
+
+.navigation-btn{
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+}
+
+.navigation-btn .prev{
+    margin-left: 35px;
+    font-family: Gilroy;
+    font-size: 16px;
+    line-height: 20px;
+    letter-spacing: 0.04em;
+    color: #356EAD;
+    position: relative;
+}
+.navigation-btn .prev::before{
+    content: "";
+    position: absolute;
+    top: 0;
+    bottom: 0;
+    left: -35px;
+    margin: auto;
+    width: 12px;
+    height: 12px;
+    background: url(../images/nav-btn.svg);
+    background-repeat: no-repeat;
+    background-position: center;
+    background-size: contain;
+}
+.navigation-btn .next{
+    margin-right: 35px;
+    font-family: Gilroy;
+    font-size: 16px;
+    line-height: 20px;
+    letter-spacing: 0.04em;
+    color: #356EAD;
+    position: relative;
+}
+.navigation-btn .next::after{
+    content: "";
+    position: absolute;
+    top: 0;
+    bottom: 0;
+    right: -35px;
+    margin: auto;
+    transform: rotateY(180deg);
+    width: 12px;
+    height: 12px;
+    background: url(../images/nav-btn.svg);
+    background-repeat: no-repeat;
+    background-position: center;
+    background-size: contain;
+}
+/* ********************************************************* */
+
+footer{
+    /* background: #FFFFFF; */
+}
+
+.footer{
+    position: relative;
+    
+}
+
+.footer-inner{
+    position: relative;
+}
+
+.footer::before{
+    content: "";
+    position: absolute;
+    left: 0;
+    bottom: 0;
+    margin: auto;
+    width: 94%;
+    height: 100%;
+    background: #316099;
+    border-radius: 0px 200px 0px 0px;
+
+}
+
+.footer-top{
+    padding-top: 91px;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    padding-bottom: 96px;
+    border-bottom: 1px solid rgba(255, 255, 255, 0.4);
+    position: relative;
+}
+
+.footer-top::before{
+    content: "";
+    position: absolute;
+    left: -100%;
+    bottom: -1px;
+    margin: auto;
+    width: 100%;
+    border-bottom: 1px solid rgba(255, 255, 255, 0.4);
+}
+
+.footer-top .footer-top-left{
+    width: 50%;
+}
+
+.footer-top .footer-top-left h1{
+    width: 337px;
+    font-size: 36px;
+    line-height: 46px;
+    letter-spacing: 0.05em;
+    color: #FFFFFF;
+    margin-bottom: 32px;
+}
+
+.footer-top .footer-top-left p{
+    width: 460px;
+    font-size: 16px;
+    line-height: 26px;
+    letter-spacing: 0.05em;
+    color: #FFFFFF;
+    opacity: 0.6;
+}
+
+.footer-top .footer-top-right .btn{
+    font-size: 16px;
+    line-height: 26px;
+    text-align: center;
+    letter-spacing: 0.04em;
+    color: #FFFFFF;
+    background: #5A98D0;
+    border-radius: 10px;
+    padding: 15px 75px;
+}
+
+.footer-bottom{
+    padding-top: 104px;
+    display: flex;
+    align-items: flex-start;
+}
+
+.footer-col{
+    margin-right: 100px;
+}
+
+.footer-col .logo{
+    display: flex;
+    align-items: center;
+    margin-bottom: 33px;
+}
+
+.footer-col .logo img{
+    width: 48px;
+    height: 32px;
+    object-fit: contain;
+    margin-right: 16px;
+}
+
+.footer-col h4{
+    font-size: 28px;
+    line-height: 46px;
+    letter-spacing: 0.02em;
+    color: #FFFFFF;
+}
+
+.footer-col .footer-info{
+    display: flex;
+    align-items: flex-start;
+    margin-bottom: 24px;
+}
+
+.footer-col .footer-info h1{
+    font-size: 16px;
+    line-height: 26px;
+    letter-spacing: 0.05em;
+    color: #FFFFFF;
+    margin-right: 16px;
+}
+
+.footer-col .footer-info .info-text{
+    font-size: 16px;
+    line-height: 26px;
+    letter-spacing: 0.05em;
+    color: #FFFFFF;
+    width: 264px;
+}
+
+.footer-col .footer-title{
+    font-size: 20px;
+    line-height: 30px;
+    letter-spacing: 0.05em;
+    color: #FFFFFF;
+    margin-bottom: 32px;
+}
+
+.footer-col .info-text{
+    font-size: 16px;
+    line-height: 26px;
+    letter-spacing: 0.05em;
+    color: #FFFFFF;
+    margin-bottom: 16px;
+    display: block;
+}
+
+.footer-guarantee{
+    font-size: 16px;
+    line-height: 26px;
+    letter-spacing: 0.05em;
+    color: #FFFFFF;
+    opacity: 0.4;
+    padding-bottom: 64px;
+}
