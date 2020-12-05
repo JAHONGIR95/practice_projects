@@ -244,7 +244,7 @@ section{
     margin-bottom: 28px;
 }
 
-.centeral-banner .golden-btn{
+.golden-btn{
     
     font-family: Open Sans;
     padding: 17.5px 17px; 
@@ -256,6 +256,7 @@ section{
     line-height: 22px;
     text-align: center;
     color: #1A1917;
+    display: inline-block;
 }
 
 .centeral-banner .golden-btn .buy-now{
@@ -681,6 +682,218 @@ section{
 .requirements-bottom-row .item-text{
     width: 514px;
 }
+/* ******************************************************************* */
+
+.clients{
+    background: url(../images/bg6.jpg);
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-position: center;
+}
+
+.clients-inner{
+    display: flex;
+    justify-content: space-between;
+}
+
+.clients-left{
+    margin-top: 303px;
+}
+
+.clients-left .golden-btn{
+    padding: 18px 38px;
+}
+
+.clients-left .quotes-text{
+    font-family: Bebas Neue;
+    font-style: normal;
+    font-weight: bold;
+    font-size: 24px;
+    line-height: 24px;
+    letter-spacing: 2px;
+    color: #FFFFFF;
+    margin-bottom: 15px;
+}
+
+.clients-left .quotes-title{
+    font-family: Bebas Neue;
+    font-style: normal;
+    font-weight: bold;
+    font-size: 80px;
+    line-height: 80px;
+    letter-spacing: 3px;
+    text-transform: uppercase;
+    color: #FFFFFF;
+    margin-bottom: 50px;
+}
+
+.clients-left .quotes-discription{
+    width: 435px;
+    font-family: Open Sans;
+    font-style: normal;
+    font-weight: normal;
+    font-size: 18px;
+    line-height: 22px;
+    color: #FFFFFF;
+    margin-bottom: 50px;
+}
+
+.clients-right{
+    margin-top: 160px;
+    margin-bottom: 147px;
+}
+
+.cards{
+    background: rgba(255, 255, 255, 0.08);
+    border-radius: 10px;
+    width: 453px;
+    margin-bottom: 30px;
+    padding: 11px 20px 11px 12px;
+}
+
+.cards:nth-child(2){
+    position: relative;
+    right: 144px;
+}
+
+.cards:nth-child(3){
+    position: relative;
+    right: 44px;
+}
+
+.cards-top{
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    margin-bottom: 27px;
+}
+
+.card-right{
+    display: flex;
+    align-items: center;
+}
+
+.card-right .clients-photo{
+    width: 65.27px;
+    height: 65.27px;
+    border-radius: 50%;
+    margin-right: 32px;
+    box-shadow:  5px 3px 0 0 rgb(255, 181, 72);
+}
+
+.card-right .about{
+    
+}
+
+.card-right .about .client-name{
+    font-family: Bebas Neue;
+    font-style: normal;
+    font-weight: bold;
+    font-size: 24px;
+    line-height: 24px;
+    letter-spacing: 2px;
+    color: #FFB548;
+
+}
+
+.card-right .about .client-position{
+    font-family: Open Sans;
+    font-style: normal;
+    font-weight: normal;
+    font-size: 18px;
+    line-height: 22px;
+    text-align: justify;
+    color: #FFFFFF;
+    opacity: 0.5;
+}
+
+.cards-top .card-left{
+
+}
+
+.cards-bottom{
+    
+}
+
+.cards-bottom .quote{
+    font-family: Open Sans;
+    font-style: normal;
+    font-weight: normal;
+    font-size: 18px;
+    line-height: 25px;
+    color: #FFFFFF;
+    margin-bottom: 20px;
+    width: 390px;
+}
+
+.cards-bottom .date{
+    font-family: Open Sans;
+    font-style: normal;
+    font-weight: normal;
+    font-size: 14px;
+    line-height: 19px;
+    color: #FFFFFF;
+    mix-blend-mode: normal;
+    opacity: 0.5;
+    margin-bottom: 10px;
+}
+/* ********************************************************** */
+
+.last-section{
+    
+}
+
+.last-section-left{
+
+}
+
+.last-section-left .last-section-image{
+
+}
+
+.last-section-right{
+
+}
+
+.last-section-banner{
+    
+}
+
+.last-section-banner .last-text{
+    
+}
+
+.last-section-banner .last-title{
+    
+}
+
+.last-section-banner .last-defination{
+    
+}
+
+.subscribe-area{
+    
+}
+
+.subscribe-area .email-area{
+    
+}
+
+.subscribe-area .email-area label{
+    
+}
+
+.subscribe-area .email-area input{
+    
+}
+
+.subscribe-area .golden-btn{
+    
+}
+
+
+
+
 
 
 
