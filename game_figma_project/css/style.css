@@ -843,54 +843,220 @@ section{
     
 }
 
+.last-wrapper{
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+}
+
 .last-section-left{
-
+    background: radial-gradient(45.43% 53.19% at 50% 50%, rgba(255, 255, 255, 0) 0%, rgba(0, 0, 0, 0) 46.15%, #080A0B 99.74%), url(../images/sculpture.jpg);
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-position: center;
+    width: 445.47px;
+    height: 694.41px;
+    margin-bottom: 30px;
 }
 
-.last-section-left .last-section-image{
-
-}
-
-.last-section-right{
+/* .last-section-right{
 
 }
 
 .last-section-banner{
     
-}
+} */
 
 .last-section-banner .last-text{
-    
+    font-family: Bebas Neue;
+    font-style: normal;
+    font-weight: bold;
+    font-size: 24px;
+    line-height: 24px;
+    letter-spacing: 2px;
+    color: #FFFFFF;
+    margin-bottom: 15px;
 }
 
 .last-section-banner .last-title{
-    
+    font-family: Bebas Neue;
+    font-style: normal;
+    font-weight: bold;
+    font-size: 80px;
+    line-height: 80px;
+    letter-spacing: 3px;
+    text-transform: uppercase;
+    color: #FFFFFF;
+    margin-bottom: 50px;
 }
 
 .last-section-banner .last-defination{
-    
+    width: 645px;
+    font-family: Open Sans;
+    font-style: normal;
+    font-weight: normal;
+    font-size: 18px;
+    line-height: 22px;
+    color: #FFFFFF;
+    margin-bottom: 65px;
 }
 
 .subscribe-area{
+    display: flex;
+    align-items: center;
     
 }
 
 .subscribe-area .email-area{
-    
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    width: 366.92px;
+    height: 60px;
+    background: rgba(255, 255, 255, 0.08);
+    border-radius: 5px;
+    padding-left: 21px;
+    margin-right: 18px;
+
 }
 
 .subscribe-area .email-area label{
-    
+    font-family: Open Sans;
+    font-style: normal;
+    font-weight: normal;
+    font-size: 14px;
+    line-height: 19px;
+    color: #FFFFFF;
+    mix-blend-mode: normal;
+    opacity: 0.5;
+    border-radius: 4px;
+    margin-bottom: 5px;
 }
 
 .subscribe-area .email-area input{
-    
+    background: none;
+    border: none;
+    outline: none;
+}
+
+input{
+    font-family: Open Sans;
+    font-style: normal;
+    font-weight: normal;
+    font-size: 18px;
+    line-height: 25px;
+    color: #f1f1f1;
+    padding-right: 20px;
+}
+
+input::placeholder{
+    font-family: Open Sans;
+    font-style: normal;
+    font-weight: normal;
+    font-size: 18px;
+    line-height: 25px;
+    color: #FFB548;
 }
 
 .subscribe-area .golden-btn{
+    border: none;
+    outline: none;
+    height: 60px;
+    padding: 0 70px;
     
 }
+/* **************************************************************** */
 
+footer{
+
+}
+
+.footer-top{
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    margin-bottom: 30px;
+}
+.footer-logo{
+    width: 90px;
+    height: 90px;
+    object-fit: cover;
+    position: relative;
+    top: -30px;
+}
+
+.footer-menu{
+
+}
+
+.footer-link{
+    font-family: Open Sans;
+    font-style: normal;
+    font-weight: bold;
+    font-size: 12px;
+    line-height: 16px;
+    letter-spacing: 0.1em;
+    text-transform: uppercase;
+    color: #FFFFFF;
+    padding: 0 20px;
+}
+
+.social-networks{
+
+}
+
+.networks{
+    margin-right: 60px;
+}
+
+.networks:last-child{
+    margin-right: 0;
+}
+
+.footer-bottom{
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    border-top: 0.873968px solid rgba(255, 255, 255, 0.507);
+    padding-top: 22px;
+    padding-bottom: 50px;
+}
+.footer-left{
+
+}
+
+.footer-text{
+    font-family: Open Sans;
+    font-style: normal;
+    font-weight: normal;
+    font-size: 14px;
+    line-height: 19px;
+    color: rgba(255, 255, 255, 0.507);
+    mix-blend-mode: normal;
+}
+
+.footer-right{
+
+}
+
+.documentation{
+    font-family: Open Sans;
+    font-style: normal;
+    font-weight: bold;
+    font-size: 12px;
+    line-height: 16px;
+    text-align: right;
+    letter-spacing: 0.1em;
+    text-transform: uppercase;
+    color: #FFFFFF;
+    padding: 0 10px;
+}
+
+.documentation:nth-child(2){
+    border-right: 1px solid #ffffff;
+    border-left: 2px solid #ffffff;
+    padding: 0 15px;
+}
 
 
 
