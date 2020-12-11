@@ -438,7 +438,7 @@ header{
 /* ********************************************************** */
 
 .hero{
-    background: url(../images/dog_main2.png), rgba(229, 229, 229, 0.288);
+    background: url(../images/dog_main2.png), rgba(229, 229, 229, 0.2);
     background-repeat: no-repeat;
     background-size: 440px auto;
     background-position: bottom right;
@@ -548,7 +548,7 @@ header{
     width: 100%;
     display: flex;
     position: relative;
-
+    margin-bottom: 200px;
 }
 
 .map{
@@ -557,6 +557,12 @@ header{
 
 .map iframe{
     width: 100%;
+}
+
+.dog_on_map{
+    position: absolute;
+    left: 20px;
+    top: -296px;
 }
 
 .location_building{
@@ -641,7 +647,7 @@ footer{
        -moz-box-pack: justify;
         -ms-flex-pack: justify;
             justify-content: space-between;
-    padding: 65px 0;
+    padding: 65px 0 28px 0;
 
 }
 
