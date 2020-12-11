@@ -176,7 +176,7 @@ header{
 
 .hero_left{
     width: 40%;
-    padding: 270px 0;
+    padding: 170px 0;
 }
 
 /* .hero_left .invite{
@@ -369,7 +369,7 @@ header{
 .article_title:hover,
 .article_author:hover{
     color: #000000;
-    text-shadow: 0 3px 2px rgba(0, 0, 0, .4);
+    text-shadow: 0 1px .5px rgba(0, 0, 0, .4);
 }
 
 .article_text{
@@ -490,6 +490,7 @@ footer{
 
     .hero{
         background: none;
+        background: #F2F2F2;
         display: flex;
         flex-direction: column;
     }
@@ -498,14 +499,11 @@ footer{
         width: 100%;
         position: relative;
         top: -130px;
-    }
-
-    .hero_left{
+        padding: 0;
         display: flex;
         flex-direction: column;
         align-items: center;
         justify-content: center;
-        padding: 0;
     }
 
     .hero_title{
@@ -518,6 +516,7 @@ footer{
     }
 
     .hero_text{
+        width: 90%;
         font-style: normal;
         font-weight: normal;
         font-size: 15px;
@@ -618,7 +617,7 @@ footer{
     /* ********************************** */
     
     .article_inner{
-        padding: 88px;
+        padding: 88px 0;
     }
     
     .latest_article{
