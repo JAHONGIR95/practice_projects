@@ -493,10 +493,11 @@ footer{
         background: #F2F2F2;
         display: flex;
         flex-direction: column;
+        overflow: hidden;
     }
 
     .hero_left{
-        width: 100%;
+        width: 95%;
         position: relative;
         top: -130px;
         padding: 0;
@@ -504,6 +505,11 @@ footer{
         flex-direction: column;
         align-items: center;
         justify-content: center;
+        overflow: hidden;
+    }
+
+    .hero_inner{
+        display: block;
     }
 
     .hero_title{
@@ -516,7 +522,7 @@ footer{
     }
 
     .hero_text{
-        width: 90%;
+        /* width: 90%; */
         font-style: normal;
         font-weight: normal;
         font-size: 15px;
