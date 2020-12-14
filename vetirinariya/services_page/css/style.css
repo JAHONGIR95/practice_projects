@@ -85,7 +85,7 @@ body{
 }
 
 .container{
-    width: 1223px;
+    width: 1300px;
     margin: 0 auto;
 }
 
@@ -321,7 +321,11 @@ header{
        -moz-box-pack: justify;
         -ms-flex-pack: justify;
             justify-content: space-between;
-    padding: 0 65px;
+    /* padding: 0 65px; */
+   
+}
+
+.header_bottom_inner{
     background-color: #fff;
 }
 
@@ -437,9 +441,130 @@ header{
 }
 /* ********************************************************** */
 
+.hero{
+    background: url(../images/bird.png);
+    background-repeat: no-repeat;
+    background-size: 435px 435px;
+    background-position: center right;
+}
 
+.hero_inner{
 
+}
 
+.hero_left{
+    padding-top: 118px;
+    padding-bottom: 140px;
+
+}
+
+.hero_title{
+    font-style: normal;
+    font-weight: bold;
+    font-size: 70px;
+    line-height: 64px;
+    color: #333333;
+    margin-bottom: 21px;
+}
+
+.hero_text{
+    font-style: normal;
+    font-weight: normal;
+    font-size: 16px;
+    line-height: 20px;
+    display: flex;
+    align-items: center;
+    color: #949494;
+    width: 447px;
+}
+/* ************************************************************************ */
+
+.service{
+    margin-bottom: 168px;
+
+}
+
+.service_inner{
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-between;
+}
+
+.service_block{
+    display: inline-block;
+    width: 305px;
+    height: 420px;
+    background: #FFFFFF;
+    border-radius: 5px 5px 0px 0px;
+    padding: 58px 53px 0 53px;
+    box-sizing: border-box;
+    transition: all ease .5s;
+}
+
+.service_block:hover{
+    box-shadow: 0 0 3px 5px rgba(0, 0, 0, .05);
+}
+
+.block_logo{
+    margin-bottom: 21px;
+}
+
+.block_title{
+    font-style: normal;
+    font-weight: 600;
+    font-size: 32px;
+    line-height: 34px;
+    color: #333333;
+    margin-bottom: 14px;
+}
+
+.block_text{
+    font-style: normal;
+    font-weight: normal;
+    font-size: 16px;
+    line-height: 20px;
+    color: #949494;
+    margin-bottom: 26px;
+}
+
+.black_btn{
+    background: #000000;
+    border-radius: 3px;
+    ont-style: normal;
+    font-weight: 450;
+    font-size: 16px;
+    line-height: 21px;
+    text-align: center;
+    color: #FFFFFF;
+    padding: 15px 30px;
+    display: inline-block;
+}
+
+.blue_btn{
+    background: #78C0DE;
+    border-radius: 3px;
+    font-style: normal;
+    font-weight: 450;
+    font-size: 16px;
+    line-height: 21px;
+    text-align: center;
+    color: #FFFFFF;
+    padding: 15px 30px;
+    display: inline-block;
+}
+
+.golden_btn{
+    background: #FFBD54;
+    border-radius: 3px;
+    font-style: normal;
+    font-weight: 450;
+    font-size: 16px;
+    line-height: 21px;
+    text-align: center;
+    color: #FFFFFF;
+    padding: 15px 30px;
+    display: inline-block;
+}
 
 
 
