@@ -331,12 +331,93 @@ header{
     background-position: center right;
 }
 
+.hero--contacts{
+    background: url(../images/dog_main2.png);
+    background-repeat: no-repeat;
+    background-size: contain;
+    background-position: center right;
+}
+
 .hero-inner{
 
 }
 
+.hero-info{
+    display: flex;
+    align-items: flex-start;
+}
+
+.info-col{
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start;
+}
+
+.hero-info__address{
+    margin-bottom: 30px;
+}
+
+.hero-info__data{
+    font-style: normal;
+    font-weight: 500;
+    font-size: 16px;
+    line-height: 21px;
+    display: flex;
+    align-items: center;
+    color: #333333;
+    margin-right: 118px;
+}
+
+.data-address{
+    width: 153px;
+}
+
+.hero-info__calendar{
+    margin-bottom: 26px;
+}
+
+.data-time{
+    margin-bottom: 8px;
+}
+
+.hero-info__data--bold{
+    margin-right: 10px;
+    font-weight: 600;
+}
+
+.hero-info__phone{
+    margin-bottom: 27px;
+}
+
+.data-phone{
+    margin-bottom: 6px;
+    transition: all ease .5s;
+}
+
+.data-phone:last-child{
+    margin-right: 0;
+}
+
+.data-phone:hover{
+    color: #FFBD54;
+}
+
+.data-phone:active{
+    color: #333333;
+    opacity: .6;
+}
+
 .hero-banner{
     padding: 118px 0 140px 0;
+}
+
+.title-contacts{
+    padding-top: 118px;
+    /* margin-bottom: 118px; */
+}
+
+.hero-banner-contacts .hero-banner__hero-text{
+    margin-bottom: 118px;
 }
 
 .hero-banner__hero-title{
@@ -497,6 +578,64 @@ header{
 }
 /* ************************************************* */
 
+.searching-section{
+    padding-top: 150px;
+    background: url(../images/bg_lupa.png);
+    background-repeat: no-repeat;
+    background-size: 934.44px 329.49px;
+    background-position: center right;
+    position: relative;
+    right: 50px;
+}
+
+.searching-section__lupa{
+    display: block;
+    width: 112px;
+    height: 112px;
+    margin: 0 auto;
+    margin-bottom: 30px;
+}
+
+.searching-section__how-to-find{
+    font-style: normal;
+    font-weight: bold;
+    font-size: 48px;
+    line-height: 62px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    color: #333333;
+    margin-bottom: 50px;
+}
+/* ************************************************************** */
+
+.location-section{
+    width: 100%;
+    display: flex;
+    position: relative;
+    margin-bottom: 200px;
+}
+
+.map{
+    width: 60%;
+}
+
+.map iframe{
+    width: 100%;
+    height: 100%;
+}
+
+.map__dog-image{
+    position: absolute;
+    left: 20px;
+    top: -296px;
+}
+
+.location-building{
+    width: 40%;
+}
+
+/* ********************************************************** */
 footer{
     background: #F3F3F3;
 }
@@ -584,7 +723,7 @@ footer{
     line-height: 18px;
     text-align: right;
     color: #5C5C5C;
-    margin-bottom: 23px;
+    padding-bottom: 23px;
 }
 
 
