@@ -106,7 +106,7 @@ h1, h2, h3, h4, h5, h6, a, p {
     width: 100%;
     padding: 0 15px;
     margin: 0 auto;
-    max-width: ;
+    max-width: 1200px;
 }
 /* ************************************************************** */
 
@@ -217,6 +217,7 @@ header{
     display: flex;
     align-items: center;
     justify-content: space-between;
+    position: relative;
 }
 
 .header-bottom__image{
@@ -319,6 +320,47 @@ header{
     height: 20px;
 
 }
+
+.window-info{
+    display: flex;
+    align-items: center;
+    /* justify-content: space-between; */
+    position: absolute;
+    width: 328px;
+    height: 131px;
+    top: 0;
+    right: 12px;
+    background: #FFFFFF;
+    border-left: 7px solid #FFBD54;
+    box-shadow: 0px 4px 20px rgba(0, 0, 0, 0.2);
+    border-radius: 5px;
+}
+.window{
+    padding: 0 22px 0 29px;
+    display: flex;
+    align-items: flex-start;
+    /* justify-content: space-around; */
+}
+
+.window__dog{
+    margin-right: 40px;
+}
+
+.window__text{
+    font-style: normal;
+    font-weight: 450;
+    font-size: 24px;
+    line-height: 26px;
+    color: #333333;
+}
+
+.window__close{
+    position: relative;
+    top: -20px;
+    cursor: pointer;
+}
+
+
 /* ***************************************************************** */
 .hero{
 
@@ -338,8 +380,22 @@ header{
     background-position: center right;
 }
 
+.hero--about{
+    background: url(../images/doctor.png);
+    background-repeat: no-repeat;
+    background-size: contain;
+    background-position: bottom right;
+}
+
 .hero-inner{
 
+}
+
+.hero-inner-about{
+    background: url(../images/bg_lupa.png);
+    background-repeat: no-repeat;
+    background-size: 669px 236px;
+    background-position: bottom left;
 }
 
 .hero-info{
@@ -438,6 +494,18 @@ header{
     display: flex;
     align-items: center;
     color: #949494;
+}
+
+.text-about{
+    padding-bottom: 300px;
+}
+
+.lupa-image{
+    display: flex;
+    justify-content: center;
+    position: relative;
+    right: 120px;
+    top: -30px;
 }
 
 /* ************************************************* */
@@ -634,6 +702,64 @@ header{
 .location-building{
     width: 40%;
 }
+/* ************************************************************ */
+
+.our-clinic{
+    width: 100%;
+    display: flex;
+}
+
+.our-clinic__image{
+    width: 50%;
+}
+
+.our-clinic-right{
+    width: 50%;
+    background-color: #fff;
+    padding: 127px 66px 130px 112px;
+}
+
+.our-clinic-right__text{
+    font-style: normal;
+    font-weight: normal;
+    font-size: 20px;
+    line-height: 26px;
+    color: #949494;
+}
+
+.our-clinic-right__text--golden{
+    color: #FFBD54;
+}
+/* ******************************************************************* */
+
+.about-us{
+    width: 100%;
+    display: flex;
+}
+
+.about-us-info{
+    width: 50%;
+    padding: 100px 30px 180px 150px;
+}
+
+.about-us-info__text{
+    font-style: normal;
+    font-weight: normal;
+    font-size: 16px;
+    line-height: 20px;
+    color: #949494;
+    margin-bottom: 19px;
+}
+
+.about-us-info__text--blue{
+    color: #78C0DE;
+}
+
+.about-us__image{
+    width: 50%;
+    /* width: 797px; */
+}
+
 
 /* ********************************************************** */
 footer{
