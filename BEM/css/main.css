@@ -96,15 +96,22 @@ h1, h2, h3, h4, h5, h6, a, p {
 }
 
 .container2{
-    width: 100%;
-    padding: 0 15px;
-    margin: 0 auto;
-    max-width: 1100px;
+    /* width: 100%; */
+    padding: 0 0 0 120px;
+    /* margin: 0 auto; */
+    /* max-width: 1100px; */
 }
 
 .container3{
     width: 100%;
     padding: 0 15px;
+    margin: 0 auto;
+    max-width: 1200px;
+}
+
+.container4{
+    width: 100%;
+    padding: 0 0 0 50px;
     margin: 0 auto;
     max-width: 1200px;
 }
@@ -469,11 +476,13 @@ header{
 
 .title-contacts{
     padding-top: 118px;
+    /* padding-left: 50px; */
     /* margin-bottom: 118px; */
 }
 
 .hero-banner-contacts .hero-banner__hero-text{
     margin-bottom: 118px;
+    
 }
 
 .hero-banner__hero-title{
@@ -739,7 +748,7 @@ header{
 
 .about-us-info{
     width: 50%;
-    padding: 100px 30px 180px 150px;
+    padding: 100px 30px 180px 120px;
 }
 
 .about-us-info__text{
@@ -759,6 +768,74 @@ header{
     width: 50%;
     /* width: 797px; */
 }
+/* ************************************************************** */
+
+.make-up{
+    display: flex;
+    width: 100%;
+    justify-content: space-between;
+    flex-wrap: nowrap;
+    margin-bottom: 145px;
+}
+
+.make-up-info{
+    padding-left: 120px;
+}
+
+.make-up-info__title{
+    padding-top: 90px;
+    font-style: normal;
+    font-weight: bold;
+    font-size: 46px;
+    line-height: 48px;
+    color: #333333;
+    width: 416px;
+    margin-bottom: 24px;
+}
+
+.make-up-info__title .golder-text{
+    color: #FFBD54;
+}
+
+.make-up-info__text{
+    font-style: normal;
+    font-weight: normal;
+    font-size: 16px;
+    line-height: 20px;
+    color: #949494;
+    width: 343px;
+    margin-bottom: 88px;
+}
+
+.make-up-controller{
+    display: flex;
+    align-items: center;
+}
+
+.make-up-controller__prev{
+    width: 9px;
+    height: 17px;
+    margin-right: 68px;
+}
+.make-up-controller__prev.make-up-controller__next{
+    transform: rotate(180deg);
+    margin-right: 75px;
+}
+
+.make-up-controller__counter{
+    width: 37px;
+    height: 42px;
+}
+
+.make-up-service{
+
+}
+
+.make-up-service__images{
+    margin-right: 10px;
+}
+
+
 
 
 /* ********************************************************** */
