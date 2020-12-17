@@ -775,11 +775,12 @@ footer{
     }
     
     .article_col{
-        width: 90%;
+        width: 80%;
         display: flex;
         flex-direction: column;
         align-items: center;
         margin-bottom: 24px;
+        max-width: 100%;
     }
     
     .article_image{
