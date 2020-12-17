@@ -557,7 +557,50 @@ footer{
     }
     /* **************************** */
 
-    
+    .humbur-menu{
+        display: block;
+        position: absolute;
+        top: 100px;
+        bottom: 0;
+        right: 0;
+        left: 0;
+        margin: auto;
+        width: 80%;
+        height: 0;
+        margin: 0 auto;
+        background: #ffffff;
+        transition: all ease .5s;
+        z-index: 2;
+        overflow: hidden;
+    }
+
+    .humbur-menu.opened{
+        height: 225px;
+    }
+
+    .humbur-menu .humbur-links{
+        width: 200px;
+        display: block;
+        font-style: normal;
+        font-weight: normal;
+        font-size: 18px;
+        line-height: 21px;
+        text-align: center;
+        letter-spacing: -0.138462px;
+        color: #2D314D;
+        padding: 12px 0;
+        transition: all ease 1s;
+        margin: 0 auto;
+        border-radius: 25px;
+    }
+
+    .humbur-menu .humbur-links:hover{
+        color: rgb(14, 147, 14);
+        background: radial-gradient(#ffffff, green)
+    }
+
+
+
 
     /* ************************ */
 
