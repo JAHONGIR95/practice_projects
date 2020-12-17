@@ -1,6 +1,14 @@
-var modal = document.querySelector('#modal_window');
-// console.log(modal);
+var modalButton = document.querySelector('#ask-me');
+var modalWindow = document.querySelector('#modal');
+var closeButton = document.querySelector('#close-btn');
+console.log(modal-window);
 
-modal.addEventListener(click, function(){
-    
+modalButton.addEventListener('click', function(){
+    modalWindow.classList.add('opened')
+    // modalContact.classList.toggle('opened')
+    // closeButton.classList.toggle('opened')
+});
+
+closeButton.addEventListener('click', function() {
+    modalWindow.classList.remove('opened')
 })
