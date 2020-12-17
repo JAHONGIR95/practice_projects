@@ -50,7 +50,7 @@
                     <a href="#" class="header-menu__links links">FAQ</a>
                     <a href="#" class="header-menu__links links">Контакты</a>
                 </div>
-                <a href="#" class="ask-me links icon icon--pet">
+                <a href="#" class="ask-me links icon icon--pet" id="modal_window">
                     Задать вопрос
                 </a>
             </div>
@@ -178,6 +178,37 @@
             © 2020 example. All Rights Reserved.
         </p>
     </footer>
+    <!-- ******************************************************* -->
+
+    <div class="modal">
+        <div class="modal__window">
+            <div class="contact-window">
+                <div class="contact__left">
+                    <p class="avto">
+                        Авторизация:
+                    </p>
+                    <a href="https://google.com" class="google" target="_blank"><img src="images/google.png" alt=""></a>
+                    <a href="https://facebook.com" class="facebook" target="_blank"><img src="images/facebook.png" alt=""></a>
+                </div>
+                <div class="contact__right">
+                    <h1 class="ask">
+                        Задать вопрос
+                    </h1>
+                    <form action="#">
+                        <input type="text" name="user_name" placeholder="Ваше имя">
+                        <div class="textarea">
+                            <p class="textarea-info">
+                                Опишите Ваш вопрос.
+                            </p>
+                            <textarea name="user_comment" id=""  placeholder="Например: в каком возрасте можно прививать от бешенства?"></textarea>
+                        </div>
+                        <button type="submit" class="button">Отправить </button>
+                    </form>
+                </div>
+            </div>
+        </div>
+    </div>
+    <script src="js/main.js"></script>
 </body>
 
 </html>
