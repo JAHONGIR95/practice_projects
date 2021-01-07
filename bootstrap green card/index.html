@@ -1,11 +1,13 @@
 <!DOCTYPE html>
 <html lang="en">
+
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <link rel="stylesheet" href="libs/bootstrap/bootstrap.min.css">
     <title>green card</title>
 </head>
+
 <body style="background-color: #f5f5f5;">
     <div class="container">
         <!-- ******************************************************* -->
@@ -14,16 +16,57 @@
                 Checkout form
             </h1>
             <p class="fs-4">
-                Below is an example form built entirely with bootstrap's form controls. Each required form group has a validation statue that can be triggered by attempting to submit the form without completing it.
+                Below is an example form built entirely with bootstrap's form controls. Each required form group has a
+                validation statue that can be triggered by attempting to submit the form without completing it.
             </p>
         </div>
         <!-- ********************************************************** -->
 
-        
+        <div class="row">
+            <div class="col-lg-8">
+                <h3 class="mb-3">
+                    Billing address
+                </h3>
+                <form action="https://echo.htmlacademy.ru">
+                    <div class="row mb-3">
+                        <div class="col-lg-6">
+                            <label for="first_name" class="form-label fs-5">First name</label>
+                            <input type="text" class="form-control" name="first_name" id="first_name">
+                        </div>
+                        <div class="col-lg-6">
+                            <label for="last_name" class="form-label fs-5">Last name</label>
+                            <input type="text" class="form-control" name="last_name" id="last_name">
+                        </div>
+                    </div>
+
+                    <div class="mb-3">
+                        <label for="user_name" class="form-label fs-5">Username</label>
+                        <div class="input-group">
+                            <span class="input-group-text">@</span>
+                            <input type="text" class="form-control fs-5" placeholder="Username" name="user_name"
+                                id="user_name">
+                        </div>
+                    </div>
+
+                    <div class="mb-3">
+                        <label for="email_address" class="form-label fs-5">Email <span class="text-secondary">(optional)</span></label>
+                        <input type="email" class="form-control fs-5" placeholder="you@exaple.com" name="email_address" id="email_address">
+                    </div>
+
+                    <div class="mb-3">
+                        <label for="user_address" class="form-label fs-5">Address</label>
+                        <input type="email" class="form-control fs-5" placeholder="1234 Main St" name="user_address" id="user_address">
+                    </div>
+
+
+                </form>
+            </div>
+        </div>
     </div>
-    
-    
+
+
 
     <script src="libs/bootstrap/bootstrap.min.js"></script>
 </body>
+
 </html>
