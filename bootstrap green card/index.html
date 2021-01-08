@@ -63,15 +63,30 @@
                         <input type="email" class="form-control fs-5" placeholder="Apartment or suite" name="user_address_two" id="user_address_two">
                     </div>
 
-                    <div class="row">
+                    <div class="row align-items-center border-bottom pb-4 mb-4">
                         <div class="col-lg-5">
-
+                            <label for="country" class="mb-2 fs-5">Country</label>
+                            <select name="country" class="form-select fs-5" id="country">
+                                <option value="" selected>Choose...</option>
+                                <option value="uzbekistan">Uzbekistan</option>
+                                <option value="korea">Korea</option>
+                                <option value="germany">Germany</option>
+                                <option value="france">France</option>
+                            </select>
                         </div>
                         <div class="col-lg-4">
-
+                            <label for="city" class="mb-2 fs-5">State</label>
+                            <select name="city" class="form-select fs-5" id="city">
+                                <option value="" selected>Choose...</option>
+                                <option value="toshkent">Toshkent</option>
+                                <option value="seul">Seul</option>
+                                <option value="berlin">Berlin</option>
+                                <option value="london">London</option>
+                            </select>
                         </div>
                         <div class="col-lg-3">
-                            
+                            <label for="file" class="fs-5 mb-2">Zip</label>
+                            <input type="file" name="file" class="form-control" id="file">
                         </div>
                     </div>
 
