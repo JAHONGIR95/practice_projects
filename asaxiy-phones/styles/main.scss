@@ -1,0 +1,32 @@
+.searching{
+    padding: 2px;
+    border-radius: 5px;
+    box-sizing: border-box;
+}
+
+.searching-icon{
+    width: 19px;
+    height: 19px;
+    margin-right: 5px;
+}
+
+.languages{
+    border: 1px solid grey;
+    border-radius: 10px;
+    color: grey;
+
+    &:hover{
+        border: 1px solid black;
+        color: black;
+    }
+
+    &:visited{
+        border: 1px solid black;
+        color: black;
+    }
+
+}
+
+.dropdown-width{
+    width: 50%;
+}

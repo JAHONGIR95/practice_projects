@@ -1,5 +1,6 @@
 <!DOCTYPE html>
 <html lang="en">
+
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
@@ -7,35 +8,57 @@
     <link rel="stylesheet" href="styles/main.css">
     <title>Asaxiy</title>
 </head>
+
 <body>
     <header>
         <div class="container-fluid">
             <div class="row py-4">
                 <div class="col-lg-7">
-                    <div class="row">
+                    <div class="row d-flex align-items-center justify-content-between">
                         <div class="col-sm-3">
                             <a href="#" class="header-logo">
                                 <img src="images/asaxiy-logo.svg" alt="">
                             </a>
                         </div>
-                        <div class="col-sm-3">
-                            <form action="">
-                            <div class="input-group bg-primary p-1 rounded">
-                                <input type="search" name="" class="form-control" id="">
-                            </div>
+                        <div class="col-sm-9">
+                            <form action="https://echo.htmlacademy.ru" class="position-relative form-search d-flex">
+                                <div class="searching d-flex w-100 bg-primary">
+                                    <input type="text" placeholder="Поиск..." name="product" class="form-control" id="">
+                                    <button type="submit"
+                                        class="btn btn-primary text-light d-flex align-items-center"><img
+                                            class="searching-icon" src="images/icons/search-icon.svg"
+                                            alt="">Искать</button>
+                                </div>
                             </form>
                         </div>
                     </div>
                 </div>
-            </div>           
+                <div class="col-lg-5 d-flex">
+                    <!-- Example single danger button -->
+                    <div class="btn-group">
+                        <button type="button" class="btn languages dropdown-toggle" data-bs-toggle="dropdown">
+                            Russian
+                        </button>
+                        <ul class="dropdown-menu">
+                            <li><a class="dropdown-item" href="#">Uzbek</a></li>
+                            <li><a class="dropdown-item" href="#">Russian</a></li>
+                            <li><a class="dropdown-item" href="#">English</a></li>
+                        </ul>
+                    </div>
+                    <button class="btn">
+                        
+                    </button>
+                </div>
+            </div>
         </div>
     </header>
 
 
 
 
-
+    <script src="libs/popper/popper.min.js"></script>
     <script src="libs/bootstrap/bootstrap.min.js"></script>
     <script src="scripts/main.js"></script>
 </body>
+
 </html>
