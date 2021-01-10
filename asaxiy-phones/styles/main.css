@@ -203,6 +203,13 @@ main {
   margin-left: 3px;
 }
 
+.card {
+  background-color: #FFFFFF;
+  border: none;
+  padding: 10px;
+  border-radius: 15px;
+}
+
 .card img {
   width: 142px;
   height: 142px;
@@ -211,5 +218,28 @@ main {
   display: block;
   margin-right: auto;
   margin-left: auto;
+}
+
+.card .card-body .stars i {
+  color: #008DFF;
+}
+
+.comment {
+  color: #acacac;
+  font-size: 12px;
+}
+
+.comment-icon {
+  color: #acacac;
+}
+
+svg.cart-bag {
+  width: 25px;
+  height: 30px;
+  fill: #c2c6d1;
+}
+
+svg.cart-bag:hover {
+  fill: #008DFF;
 }
 /*# sourceMappingURL=main.css.map */
