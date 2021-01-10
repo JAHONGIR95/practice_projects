@@ -112,16 +112,43 @@ main{
 
 .aside-section{
     border-radius: 25px;
-    box-shadow: 0 10px 15px rgba(165, 165, 165, .2);
+    box-shadow: 0 12px 18px rgba(165, 165, 165, .3);
+    overflow: hidden;
+
+    .aside-title{
+        color: #999898;
+        font-weight: 550;
+    }
 
     form{
+
+        input[type=checkbox]:checked + label{
+            color: black;
+        }
+
+        .extra-cols{
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            padding: 15px;
+            background-color: #DFF1FF;
+
+            .down-sign{
+                width: 20px;
+                height: 20px;
+                object-fit: cover;
+            }
+        }
 
         .aside-item{
             display: flex;
             align-items: center;
-        }
 
-        
+            label{
+                color: #929090;
+                font-weight: 550;
+            }
+        }
     }
 }
 
