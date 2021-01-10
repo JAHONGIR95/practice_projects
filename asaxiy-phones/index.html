@@ -83,14 +83,106 @@
     </header>
 
     <main class="container-fluid">
-        <nav style="--bs-breadcrumb-divider: url(&#34;data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' width='8' height='8'%3E%3Cpath d='M2.5 0L1 1.5 3.5 4 1 6.5 2.5 8l4-4-4-4z' fill='currentColor'/%3E%3C/svg%3E&#34;);">
+        <nav style="--bs-breadcrumb-divider: url(&#34;data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' width='8' height='8'%3E%3Cpath d='M2.5 0L1 1.5 3.5 4 1 6.5 2.5 8l4-4-4-4z' fill='grey'/%3E%3C/svg%3E&#34;);"
+            class="mb-4">
             <ol class="breadcrumb">
                 <li class="breadcrumb-item"><a href="#" class="crumb-menus">Главная</a></li>
                 <li class="breadcrumb-item"><a href="#" class="crumb-menus">Продукты</a></li>
                 <li class="breadcrumb-item"><a href="#" class="crumb-menus">Телефоны и гаджеты</a></li>
-                <li class="breadcrumb-item"><a href="#" class="crumb-menus active">Телефоны</a></li>
+                <li class="breadcrumb-item"><a class="crumb-menus active">Телефоны</a></li>
             </ol>
         </nav>
+
+        <div class="row">
+            <div class="col-lg-3">
+                <div class="aside-section" style="background-color: #ffffff;">
+                    <p class="p-4 pb-0">
+                        Производитель
+                    </p>
+                    <form action="#">
+                        <div class="aside-item border-bottom d-flex px-4 p-3">
+                            <input class="form-check-input fs-5 me-2 border-2" name="phone-chosen" type="checkbox" value="iPhone"
+                                id="iphone">
+                            <label class="form-check-label" for="iphone">
+                                Apple (64)
+                            </label>
+                        </div>
+                        <div class="aside-item border-bottom d-flex px-4 p-3">
+                            <input class="form-check-input fs-5 me-2 border-2" name="phone-chosen" type="checkbox"
+                                value="BQ-mobile" id="BQ-mobile">
+                            <label class="form-check-label" for="BQ-mobile">
+                                BQ-mobile (13)
+                            </label>
+                        </div>
+                        <div class="aside-item border-bottom d-flex px-4 p-3">
+                            <input class="form-check-input fs-5 me-2 border-2" name="phone-chosen" type="checkbox" value="honor"
+                                id="honor">
+                            <label class="form-check-label" for="honor">
+                                Honor (2)
+                            </label>
+                        </div>
+                        <div class="aside-item border-bottom d-flex px-4 p-3">
+                            <input class="form-check-input fs-5 me-2 border-2" name="phone-chosen" type="checkbox" value="Huawei"
+                                id="Huawei">
+                            <label class="form-check-label" for="Huawei">
+                                Huawei (8)
+                            </label>
+                        </div>
+                        <div class="aside-item border-bottom d-flex px-4 p-3">
+                            <input class="form-check-input fs-5 me-2 border-2" name="phone-chosen" type="checkbox" value="realme"
+                                id="realme">
+                            <label class="form-check-label" for="realme">
+                                Readme (9)
+                            </label>
+                        </div>
+                        <div class="aside-item border-bottom d-flex px-4 p-3">
+                            <input class="form-check-input fs-5 me-2 border-2" name="phone-chosen" type="checkbox" value="samsung"
+                                id="samsung">
+                            <label class="form-check-label" for="samsung">
+                                Samsung (30)
+                            </label>
+                        </div>
+
+                        <a class="btn btn-primary" data-bs-toggle="collapse" href="#collapseExample" role="button"
+                            aria-expanded="false" aria-controls="collapseExample">
+                            Link with href
+                        </a>
+
+                        <div class="collapse" id="collapseExample">
+                            <div class="aside-item border-bottom d-flex px-4 p-3">
+                                <input class="form-check-input fs-5 me-2 border-2" name="phone-chosen" type="checkbox" value="honor"
+                                    id="honor">
+                                <label class="form-check-label" for="honor">
+                                    Honor (2)
+                                </label>
+                            </div>
+                            <div class="aside-item border-bottom d-flex px-4 p-3">
+                                <input class="form-check-input fs-5 me-2 border-2" name="phone-chosen" type="checkbox" value="Huawei"
+                                    id="Huawei">
+                                <label class="form-check-label" for="Huawei">
+                                    Huawei (8)
+                                </label>
+                            </div>
+                            <div class="aside-item border-bottom d-flex px-4 p-3">
+                                <input class="form-check-input fs-5 me-2 border-2" name="phone-chosen" type="checkbox" value="realme"
+                                    id="realme">
+                                <label class="form-check-label" for="realme">
+                                    Readme (9)
+                                </label>
+                            </div>
+                            <div class="aside-item border-bottom d-flex px-4 p-3">
+                                <input class="form-check-input fs-5 me-2 border-2" name="phone-chosen" type="checkbox" value="samsung"
+                                    id="samsung">
+                                <label class="form-check-label" for="samsung">
+                                    Samsung (30)
+                                </label>
+                            </div>
+                        </div>
+                    </form>
+
+                </div>
+            </div>
+        </div>
 
     </main>
 

@@ -98,7 +98,7 @@ main{
 .crumb-menus{
     font-size: 15px;
     font-weight: 550;
-    color: rgb(172, 172, 172);
+    color: #acacac;
     transition: all ease .5s;
 
     &:hover{
@@ -109,4 +109,21 @@ main{
         color: black;
     }
 }
+
+.aside-section{
+    border-radius: 25px;
+    box-shadow: 0 10px 15px rgba(165, 165, 165, .2);
+
+    form{
+
+        .aside-item{
+            display: flex;
+            align-items: center;
+        }
+
+        
+    }
+}
+
+
 
