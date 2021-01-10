@@ -17,9 +17,19 @@ a {
   text-decoration: none;
 }
 
+body {
+  background-color: #F4F7FD;
+}
+
+header {
+  -webkit-box-shadow: 0 12px 8px 10px rgba(165, 165, 165, 0.1);
+          box-shadow: 0 12px 8px 10px rgba(165, 165, 165, 0.1);
+  background-color: #fff;
+}
+
 .searching {
   padding: 2px;
-  border-radius: 5px;
+  border-radius: 7px;
   -webkit-box-sizing: border-box;
           box-sizing: border-box;
 }
@@ -41,9 +51,8 @@ a {
   color: black;
 }
 
-.languages:visited {
-  border: 1px solid black;
-  color: black;
+.dropdown-menu.lang-drop:hover .languages {
+  color: #000000;
 }
 
 .dropdown-width {
@@ -73,5 +82,52 @@ a {
 .smartphone {
   width: 19px;
   height: 19px;
+}
+
+.menus {
+  color: #4d4c4c;
+  font-size: 15px;
+  font-weight: 550;
+  -webkit-transition: all ease .5s;
+  transition: all ease .5s;
+}
+
+.menus:hover {
+  color: #8383ff;
+}
+
+.hamburger {
+  margin-right: 5px;
+}
+
+.hamburger__link {
+  width: 20px;
+  height: 2px;
+  background-color: #8383ff;
+  margin-bottom: 4px;
+}
+
+.hamburger__link:last-child {
+  margin-bottom: 0;
+}
+
+main {
+  background-color: #F4F7FD;
+}
+
+.crumb-menus {
+  font-size: 15px;
+  font-weight: 550;
+  color: #acacac;
+  -webkit-transition: all ease .5s;
+  transition: all ease .5s;
+}
+
+.crumb-menus:hover {
+  color: black;
+}
+
+.crumb-menus.active {
+  color: black;
 }
 /*# sourceMappingURL=main.css.map */

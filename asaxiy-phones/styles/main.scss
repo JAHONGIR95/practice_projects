@@ -1,8 +1,17 @@
 @import 'normalize';
 
+body{
+    background-color: #F4F7FD;
+}
+
+header{
+    box-shadow: 0 12px 8px 10px rgba(165, 165, 165, .1);
+    background-color: #fff;
+}
+
 .searching{
     padding: 2px;
-    border-radius: 5px;
+    border-radius: 7px;
     box-sizing: border-box;
 }
 
@@ -21,12 +30,10 @@
         border: 1px solid black;
         color: black;
     }
+}
 
-    &:visited{
-        border: 1px solid black;
-        color: black;
-    }
-
+.dropdown-menu.lang-drop:hover .languages{
+    color: #000000;
 }
 
 .dropdown-width{
@@ -54,7 +61,52 @@
 
 .smartphone{
     width: 19px;
-    height: 19px;
-   
+    height: 19px;  
+}
+
+.menus{
+    color: #4d4c4c;
+    font-size: 15px;
+    font-weight: 550;
+    transition: all ease .5s;
+
+    &:hover{
+        color:  rgb(131, 131, 255);
+    }
+}
+
+.hamburger{
+
+    margin-right: 5px;
+
+    &__link{
+        width: 20px;
+        height: 2px;
+        background-color: rgb(131, 131, 255);
+        margin-bottom: 4px;
+
+        &:last-child{
+            margin-bottom: 0;
+        }
+    }
+}
+
+main{
+    background-color: #F4F7FD;
+}
+
+.crumb-menus{
+    font-size: 15px;
+    font-weight: 550;
+    color: rgb(172, 172, 172);
+    transition: all ease .5s;
+
+    &:hover{
+        color: black;
+    }
+    
+    &.active{
+        color: black;
+    }
 }
 

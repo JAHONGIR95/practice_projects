@@ -10,7 +10,7 @@
 </head>
 
 <body>
-    <header>
+    <header class="mb-5">
         <div class="container-fluid">
             <div class="row py-4 border-bottom">
                 <div class="col-xl-7 col-lg-55 px-4">
@@ -23,7 +23,8 @@
                         <div class="col-sm-9">
                             <form action="https://echo.htmlacademy.ru" class="position-relative form-search d-flex">
                                 <div class="searching d-flex w-100 bg-primary">
-                                    <input type="text" placeholder="Поиск..." name="product" class="form-control" id="">
+                                    <input type="text" placeholder="Поиск..." name="product"
+                                        class="form-control rounded" id="">
                                     <button type="submit"
                                         class="btn btn-primary text-light d-flex align-items-center"><img
                                             class="searching-icon" src="images/icons/search-icon.svg"
@@ -39,20 +40,59 @@
                         <button type="button" class="btn languages dropdown-toggle" data-bs-toggle="dropdown">
                             Russian
                         </button>
-                        <ul class="dropdown-menu">
+                        <ul class="dropdown-menu lang-drop">
                             <li><a class="dropdown-item" href="#">Uzbek</a></li>
                             <li><a class="dropdown-item" href="#">Russian</a></li>
                             <li><a class="dropdown-item" href="#">English</a></li>
                         </ul>
                     </div>
                     <button type="button" class="btn d-flex korzinka">
-                        <img src="images/icons/cart.svg" class="cart-icon" alt=""><p class="text-korzinka">Корзинка</p><span class="badge bg-primary rounded-pill">0</span>
+                        <img src="images/icons/cart.svg" class="cart-icon" alt="">
+                        <p class="text-korzinka">Корзинка</p><span class="badge bg-primary rounded-pill">0</span>
                     </button>
-                    <a href="tel:998712000105" class="phone-number"><img src="images/icons/smartphone.svg" class="smartphone" alt="">+998712000105</a>
+                    <a href="tel:998712000105" class="phone-number"><img src="images/icons/smartphone.svg"
+                            class="smartphone" alt="">+998712000105</a>
                 </div>
             </div>
+            <!-- ************************************************************* -->
+
+            <ul class="nav d-flex justify-content-between py-3">
+                <li class="nav-item">
+                    <a href="javascript:void(0)" class="nav-link menus d-flex align-items-center">
+                        <div class="hamburger">
+                            <div class="hamburger__link"></div>
+                            <div class="hamburger__link"></div>
+                            <div class="hamburger__link"></div>
+                        </div>
+                        Все категории
+                    </a>
+                </li>
+
+                <li class="nav-item"><a href="javascript:void(0)" class="nav-link menus">Новости</a></li>
+                <li class="nav-item"><a href="javascript:void(0)" class="nav-link menus">Скидки</a></li>
+                <li class="nav-item"><a href="javascript:void(0)" class="nav-link menus">Книги</a></li>
+                <li class="nav-item"><a href="javascript:void(0)" class="nav-link menus">Мебель</a></li>
+                <li class="nav-item"><a href="javascript:void(0)" class="nav-link menus">COVID-19</a></li>
+                <li class="nav-item"><a href="javascript:void(0)" class="nav-link menus">Телефоны и гаджеты</a></li>
+                <li class="nav-item"><a href="javascript:void(0)" class="nav-link menus">Компьютеры и оргтехника</a>
+                </li>
+                <li class="nav-item"><a href="javascript:void(0)" class="nav-link menus">Для геймеров</a></li>
+                <li class="nav-item"><a href="javascript:void(0)" class="nav-link menus">Кондиционеры</a></li>
+            </ul>
         </div>
     </header>
+
+    <main class="container-fluid">
+        <nav style="--bs-breadcrumb-divider: url(&#34;data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' width='8' height='8'%3E%3Cpath d='M2.5 0L1 1.5 3.5 4 1 6.5 2.5 8l4-4-4-4z' fill='currentColor'/%3E%3C/svg%3E&#34;);">
+            <ol class="breadcrumb">
+                <li class="breadcrumb-item"><a href="#" class="crumb-menus">Главная</a></li>
+                <li class="breadcrumb-item"><a href="#" class="crumb-menus">Продукты</a></li>
+                <li class="breadcrumb-item"><a href="#" class="crumb-menus">Телефоны и гаджеты</a></li>
+                <li class="breadcrumb-item"><a href="#" class="crumb-menus active">Телефоны</a></li>
+            </ol>
+        </nav>
+
+    </main>
 
 
 
