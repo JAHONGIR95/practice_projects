@@ -32,3 +32,29 @@
 .dropdown-width{
     width: 50%;
 }
+
+.korzinka{
+    border: 1px solid grey;
+    border-radius: 10px;
+}
+
+.cart-icon{
+    margin-right: 10px;
+}
+
+.text-korzinka,
+.phone-number{
+    color: rgb(168, 165, 165);
+    font-weight: 550;
+
+    &:hover{
+        color: #000000;
+    }
+}
+
+.smartphone{
+    width: 19px;
+    height: 19px;
+   
+}
+

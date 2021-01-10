@@ -49,4 +49,29 @@ a {
 .dropdown-width {
   width: 50%;
 }
+
+.korzinka {
+  border: 1px solid grey;
+  border-radius: 10px;
+}
+
+.cart-icon {
+  margin-right: 10px;
+}
+
+.text-korzinka,
+.phone-number {
+  color: #a8a5a5;
+  font-weight: 550;
+}
+
+.text-korzinka:hover,
+.phone-number:hover {
+  color: #000000;
+}
+
+.smartphone {
+  width: 19px;
+  height: 19px;
+}
 /*# sourceMappingURL=main.css.map */
