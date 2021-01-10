@@ -132,11 +132,17 @@ main{
             justify-content: center;
             padding: 15px;
             background-color: #DFF1FF;
+            transition: all ease .5s;
 
+            
             .down-sign{
                 width: 20px;
                 height: 20px;
                 object-fit: cover;
+
+                &.clicked{
+                    transform: rotate(180deg);
+                }
             }
         }
 
@@ -152,5 +158,31 @@ main{
     }
 }
 
+.selection{
+    background-color: rgb(74, 74, 240);
+    display: inline-block;
+    padding: 2px;
+    border-radius: 7px;
+
+
+    span img{
+        width: 10px;
+        height: 10px;
+        margin-right: 5px;
+        margin-left: 3px;
+    }
+}
+
+.card{
+
+    img{
+        width: 142px;
+        height: 142px;
+        object-fit: cover;
+        display: block;
+        margin-right: auto;
+        margin-left: auto;
+    }
+}
 
 
