@@ -264,3 +264,34 @@ svg.cart-bag{
     }
 }
 
+.app-section{
+
+    background-color: #008DFF;
+    height: 250px;
+    overflow: hidden;
+    border-radius: 15px;
+    padding-left: 150px;
+    padding-right: 150px;
+}
+
+.app-store,
+.google-play{
+    
+    color: #f1ffff;
+    text-align: left;
+    border: 1px solid #fff;
+    border-radius: 10px;
+    width: 167px;
+
+    h4{
+        color: white;
+        font-weight: 350;
+        margin-bottom: 3px;
+        font-size: 17px;
+    }
+
+    p{
+        font-size: 9px;
+        font-weight: 300;
+    }
+}

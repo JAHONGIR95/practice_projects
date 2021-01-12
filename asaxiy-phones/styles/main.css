@@ -285,4 +285,36 @@ svg.cart-bag:hover {
 .shopping .order {
   font-size: 12px;
 }
+
+.app-section {
+  background-color: #008DFF;
+  height: 250px;
+  overflow: hidden;
+  border-radius: 15px;
+  padding-left: 150px;
+  padding-right: 150px;
+}
+
+.app-store,
+.google-play {
+  color: #f1ffff;
+  text-align: left;
+  border: 1px solid #fff;
+  border-radius: 10px;
+  width: 167px;
+}
+
+.app-store h4,
+.google-play h4 {
+  color: white;
+  font-weight: 350;
+  margin-bottom: 3px;
+  font-size: 17px;
+}
+
+.app-store p,
+.google-play p {
+  font-size: 9px;
+  font-weight: 300;
+}
 /*# sourceMappingURL=main.css.map */
