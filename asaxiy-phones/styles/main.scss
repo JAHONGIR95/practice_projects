@@ -179,6 +179,18 @@ main{
     border: none;
     padding: 10px;
     border-radius: 15px;
+    box-shadow: 0 5px 18px rgba(165, 165, 165, .3);
+    position: relative;
+
+    .skidka{
+        position: absolute;
+        background-color: #FF9800;
+        color: #FFFFFF;
+        padding: 2px 6px;
+        border-radius:7px;
+        font-size: 13px;
+        font-weight: 550;
+    }
 
     img{
         width: 142px;
@@ -190,6 +202,15 @@ main{
     }
 
     .card-body{
+
+        .card-title-phone{
+            font-weight: 550;
+            font-size: 12px;
+
+            &:hover{
+                color: #077bda;
+            }
+        }
 
         .stars{
             i{
@@ -218,4 +239,28 @@ svg.cart-bag{
     }
 }
 
+.cost{
+
+    .old-cost{
+        font-size: 11px;
+    }
+
+    .new-cost{
+        font-size: 14px;
+        font-weight: 550;
+    }
+}
+
+.shopping{
+
+    cursor: pointer;
+
+    &:hover{
+        color: #FF9800;
+    }
+
+    .order{
+        font-size: 12px;
+    }
+}
 
