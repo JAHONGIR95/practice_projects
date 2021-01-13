@@ -13,20 +13,36 @@
         }
 
         h3,
-        h2{
+        h2 {
             color: green;
             padding: 0;
             margin: 0;
-        }
-        h2{
-            color: blue;
+            margin-bottom: 10px;
         }
 
-        .brand .result{
-            color: #cccccc;
+        h2 {
+            margin-top: 5px;
+            color: rgb(77, 77, 245);
+        }
+
+        .task-wrapper {
+            margin-bottom: 15px;
+            border-bottom: 1px solid blue;
+        }
+
+        .brand .result {
+            color: #a09e9e;
             text-transform: capitalize;
         }
-        
+        input{
+            outline: none;
+            border: 1px solid #cccccc;
+            /* border-radius: 3px; */
+        }
+
+        button{
+            outline: none;
+        }
     </style>
 </head>
 
@@ -37,8 +53,17 @@
         <button class="task1-btn" id="task1-btn">Brand</button>
         <span class="task1-result">
             <h2 class="brand">Sizing mashinangiz brandi: <span class="result" id="brand-name"></span></h2>
-        </div>
     </div>
+    </div>
+
+    <h3>Task 2</h3>
+    <div class="task-wrapper">
+        <input type="text" id="kv" class="kv">
+        <button id="kv-btn">Hisoblash</button>
+        <h2>Natijani consolega ko'rishingiz</h2>
+    </div>
+
+    <h2>Task 3</h2>
 
 
     <script src="script/main.js"></script>
