@@ -329,20 +329,9 @@ footer{
     color: #fff;
 }
 
-.footer-link{
-    color: #fff;
-    transition: all .5s;
-
-    &:hover{
-        transform: translate(10px);
-        color: #fff;
-    }
-}
-
 .footer-links{
     color: #fff;
     transition: all .5s;
-    position: relative;
 
     &:hover{
         transform: translate(10px);
@@ -368,3 +357,7 @@ footer{
 //     height: 15px;
 //     background: url(../images/icons/cart.svg);
 // }
+
+.payment-method-logo{
+    width: 55px;
+}

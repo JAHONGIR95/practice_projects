@@ -353,28 +353,19 @@ footer {
   color: #fff;
 }
 
-.footer-link {
-  color: #fff;
-  -webkit-transition: all .5s;
-  transition: all .5s;
-}
-
-.footer-link:hover {
-  -webkit-transform: translate(10px);
-          transform: translate(10px);
-  color: #fff;
-}
-
 .footer-links {
   color: #fff;
   -webkit-transition: all .5s;
   transition: all .5s;
-  position: relative;
 }
 
 .footer-links:hover {
   -webkit-transform: translate(10px);
           transform: translate(10px);
   color: #fff;
+}
+
+.payment-method-logo {
+  width: 55px;
 }
 /*# sourceMappingURL=main.css.map */
