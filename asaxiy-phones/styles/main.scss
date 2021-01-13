@@ -298,11 +298,29 @@ svg.cart-bag{
 
 footer{
     background-color: #008DFF;
-
 }
 
 .service{
     background-color: #fff;
     border-radius: 15px;
+    display: flex;
+    margin-left: 15px;
+    margin-right: 15px;
+}
 
+.service-logo{
+    width: 44px;
+    height: 40px;
+}
+
+.service-title{
+    font-size: 18px;
+    font-weight: 600;
+    padding-bottom: 5px;
+}
+
+.service-text{
+    font-size: 15px;
+    font-weight: normal;
+    max-width: 180px;
 }
