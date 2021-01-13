@@ -35,7 +35,7 @@ var cars = [
 
     {
         name: 'damas',
-        color: 'wihite',
+        color: 'white',
         price: '$6000',
         comfortance: 'simple',
         weight: '600kg',
@@ -46,8 +46,10 @@ var cars = [
 
 cars.forEach(item => {
     if(item.name == choise){
-        console.log(choise + ' ning ' + feature + ' : ' + item[feature])
+        console.log('Siz so\'ragan mashinaning ' + feature + 'i : ' + item[feature]);
+        console.log("Quyida " + choise + " haqida to'liq ma'lumot");
+        console.log(item)
     } else {
-       console.log(item);
+    //    console.log(item);
     }
 })
