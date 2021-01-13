@@ -1,14 +1,47 @@
 <!DOCTYPE html>
 <html lang="en">
+
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Function task</title>
+
+    <style>
+        body {
+            padding: 0;
+            margin: 0 25px;
+        }
+
+        h3,
+        h2{
+            color: green;
+            padding: 0;
+            margin: 0;
+        }
+        h2{
+            color: blue;
+        }
+
+        .brand .result{
+            color: #cccccc;
+            text-transform: capitalize;
+        }
+        
+    </style>
 </head>
+
 <body>
-    
-    
+    <h3>Task 1</h3>
+    <div class="task-wrapper">
+        <input type="text" class="task1" id="task1-input" placeholder="Mashina nomi:">
+        <button class="task1-btn" id="task1-btn">Brand</button>
+        <span class="task1-result">
+            <h2 class="brand">Sizing mashinangiz brandi: <span class="result" id="brand-name"></span></h2>
+        </div>
+    </div>
+
 
     <script src="script/main.js"></script>
 </body>
+
 </html>
