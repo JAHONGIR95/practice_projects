@@ -348,4 +348,33 @@ footer {
   font-weight: normal;
   max-width: 180px;
 }
+
+.footer-link-title {
+  color: #fff;
+}
+
+.footer-link {
+  color: #fff;
+  -webkit-transition: all .5s;
+  transition: all .5s;
+}
+
+.footer-link:hover {
+  -webkit-transform: translate(10px);
+          transform: translate(10px);
+  color: #fff;
+}
+
+.footer-links {
+  color: #fff;
+  -webkit-transition: all .5s;
+  transition: all .5s;
+  position: relative;
+}
+
+.footer-links:hover {
+  -webkit-transform: translate(10px);
+          transform: translate(10px);
+  color: #fff;
+}
 /*# sourceMappingURL=main.css.map */

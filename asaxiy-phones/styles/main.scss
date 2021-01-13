@@ -324,3 +324,47 @@ footer{
     font-weight: normal;
     max-width: 180px;
 }
+
+.footer-link-title{
+    color: #fff;
+}
+
+.footer-link{
+    color: #fff;
+    transition: all .5s;
+
+    &:hover{
+        transform: translate(10px);
+        color: #fff;
+    }
+}
+
+.footer-links{
+    color: #fff;
+    transition: all .5s;
+    position: relative;
+
+    &:hover{
+        transform: translate(10px);
+        color: #fff;
+    }
+}
+
+// .footer-before::before{
+//     content: "";
+//     position: absolute;
+//     top: 0;
+//     bottom: 0;
+//     right: auto;
+//     left: 0;
+//     margin: auto;
+//     background-repeat: no-repeat;
+//     background-size: contain;
+//     background-position: center;
+// }
+
+// .footer-before--address::before{
+//     width: 15px;
+//     height: 15px;
+//     background: url(../images/icons/cart.svg);
+// }
