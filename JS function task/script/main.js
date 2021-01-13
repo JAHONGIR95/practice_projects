@@ -17,7 +17,7 @@ var squareButton = document.querySelector('#kv-btn');
 
 
 squareButton.addEventListener('click', function(){
-    
+
     var num;
     num = square.value;
     
@@ -43,5 +43,22 @@ nameBtn.addEventListener('click', function(){
     }
 
     alert(greeting());
+})
+
+// *****************************************************************************
+
+var hour = document.querySelector('#hour');
+var hourButton = document.querySelector('#hour-btn');
+const minute = 60;
+
+hourButton.addEventListener('click', function(){
+    
+    var soat = hour.value;
+
+    function hourToMinute(){
+        return soat * minute;
+    }
+
+    console.log(soat + ' soat ' + hourToMinute() + ' daqiqadir.');
 })
 
