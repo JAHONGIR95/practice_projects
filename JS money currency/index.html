@@ -1,0 +1,63 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Money Exchanging</title>
+</head>
+
+<style>
+    body {
+        margin: 0 55px;
+        padding: 0;
+    }
+
+    h1,
+    h2,
+    h3,
+    h4 {
+        margin: 0;
+        padding: 0;
+    }
+    h1{
+        text-align: center;
+        margin-top: 35px;
+        margin-bottom: 35px;
+    }
+    form div{
+        display: flex;
+        align-items: center;
+        justify-content: center;
+    }
+</style>
+
+<body>
+
+    <h1>Chorsu dollar, yevro pokupaem</h1>
+    <form id="currency">
+        <div>
+            <input type="number" class="amount" id="amount">
+            <select name="" id="currency-choosing">
+                <option value="yevro">Yevro</option>
+                <option value="yuan">Yuan</option>
+                <option value="rubl">rubl</option>
+                <option value="dinor">Dinor</option>
+                <option value="funt">Funt</option>
+                <option value="yevro">John Wick tillasi</option>
+            </select>
+            <div class="toSum">
+                <input type="text" class="sum" id="toSum">
+                <p>so'm</p>
+            </div>
+        </div>
+
+        <button type="submit" id="submit">O'girish</button>
+    </form>
+
+
+
+    <script src="scripts/main.js"></script>
+</body>
+
+</html>
