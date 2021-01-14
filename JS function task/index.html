@@ -44,10 +44,30 @@
         button {
             outline: none;
         }
+
+        .temp{
+            display: flex;
+        }
+
+        .temp-first{
+            margin-right: 100px;
+            margin-bottom: 15px;
+        }
+
+        #cel-result,
+        #fah-result{
+            color: rgb(21, 172, 21);
+        }
+        
+        .wrap-top{
+            padding-top: 15px;
+        }
     </style>
 </head>
 
 <body>
+    <div class="task-wrapper wrap-top"></div>
+
     <h3>Task 1</h3>
     <div class="task-wrapper">
         <input type="text" class="task1" id="task1-input" placeholder="Mashina nomi:">
@@ -73,16 +93,16 @@
     </div>
 
     <h3>Task 4</h3>
-    <div class="task-wrapper">
-        <div>
+    <div class="task-wrapper temp">
+        <div class="temp-first">
             <input type="text" id="cel" class="cel" placeholder="Celsius">
             <h2>Fahrenheit: <span id="fah-result"></span></h2>
             <button id="to-fah">to Fahrenheit</button>
         </div>
 
         <div>
-            <input type="text" id="fah" class="fah">
-            <h2>Celsius <span id="cel-result"></span></h2>
+            <input type="text" id="fah" class="fah" placeholder="Fahrenheit">
+            <h2>Celsius: <span id="cel-result"></span></h2>
             <button id="to-cel">to Celsius</button>
         </div>
 
