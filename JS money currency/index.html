@@ -22,7 +22,7 @@
     }
     h1{
         text-align: center;
-        margin-top: 35px;
+        padding-top: 35px;
         margin-bottom: 35px;
     }
     form div{
@@ -49,6 +49,7 @@
         margin-right: auto;
         margin-left: auto;
         background-color: #f1f1f1;
+        height: 100vh;
     }
     button{
         margin-top: 50px;
@@ -65,6 +66,7 @@
         border: 1px solid #000;
         height: 40px;
         padding-right: 15px;
+        background-color: #fff;
     }
     .toSum input{
         border: none;
@@ -75,28 +77,27 @@
     }
 </style>
 
-<body class="container">
+<body>
 
-    <h1>Chorsu dollar, yevro pokupaem</h1>
+    <div class="container">
+        <h1>Chorsu dollar, yevro pokupaem</h1>
     <form id="currency">
         <div>
             <input type="number" class="amount" id="amount" placeholder="summa">
             <select name="" id="currency-choosing">
-                <option value="yevro">Yevro</option>
-                <option value="yuan">Yuan</option>
-                <option value="rubl">rubl</option>
-                <option value="dinor">Dinor</option>
-                <option value="funt">Funt</option>
-                <option value="yevro">John Wick tillasi</option>
+                <option value="12700">Yevro</option>
+                <option value="100">Yuan</option>
+                <option value="141">rubl</option>
+                <option value="34000">Dinor</option>
+                <option value="14200">Funt</option>
+                <option value="10000">John Wick tillasi</option>
             </select>
-            <div class="toSum">
-                <input type="text" class="sum" id="toSum">
-                <p>so'm</p>
-            </div>
+            <h1><span id="toSum"></span> so'm</h1>
         </div>
 
-        <button type="submit" id="submit">O'girish</button>
+        <button type="submit" id="submit">Tozalash</button>
     </form>
+    </div>
 
 
 
