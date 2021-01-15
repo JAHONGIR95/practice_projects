@@ -28,16 +28,59 @@
     form div{
         display: flex;
         align-items: center;
-        justify-content: center;
+        justify-content: space-between;
+    }
+    input{
+        padding: 10px 20px;
+        font-size: 15px;
+        outline: none;
+    }
+    select{
+        height: 40px;
+        width: 250px;
+        outline: none;
+        border: 1px solid grey;
+    }
+    .container{
+        width: 100%;
+        max-width: 900px;
+        padding-right: 15px;
+        padding-left: 15px;
+        margin-right: auto;
+        margin-left: auto;
+        background-color: #f1f1f1;
+    }
+    button{
+        margin-top: 50px;
+        width: 200px;
+        height: 40px;
+        border: none;
+        outline: none;
+        background: none;
+        border: 2px solid #12e212;
+        font-size: 15px;
+        color: #158015;
+    }
+    .toSum{
+        border: 1px solid #000;
+        height: 40px;
+        padding-right: 15px;
+    }
+    .toSum input{
+        border: none;
+    }
+    .toSum p{
+        font-size: 16px;
+        font-family: Arial, "Helvetica Neue", Helvetica, sans-serif;
     }
 </style>
 
-<body>
+<body class="container">
 
     <h1>Chorsu dollar, yevro pokupaem</h1>
     <form id="currency">
         <div>
-            <input type="number" class="amount" id="amount">
+            <input type="number" class="amount" id="amount" placeholder="summa">
             <select name="" id="currency-choosing">
                 <option value="yevro">Yevro</option>
                 <option value="yuan">Yuan</option>
