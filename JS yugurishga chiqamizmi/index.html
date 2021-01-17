@@ -1,0 +1,83 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Xat generator</title>
+</head>
+
+<style>
+    body{
+        font-family: sans-serif;
+        display: flex;    
+        justify-content: center;
+        align-items: center;
+        margin: 0;
+        padding: 0;
+        width: 100vw;
+        height: 100vh;
+    }
+    main{
+        display: flex;
+        align-items: center;
+        flex-direction: column;
+    }
+    h1, h2, h3, h4, h5, h6, p{
+        margin: 0;
+        padding: 0;
+    }
+    .title{
+        margin-bottom: 20px;
+        font-size: 16px;
+    }
+    .yes-or-no{
+        font-size: 56px;
+        font-weight: 400;
+        margin-bottom: 20px;
+    }
+    form{
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+    }
+    label{
+        font-size: 16px;
+    }
+    input[type=number]{
+        border: none;
+        background-color: #f1f1f1;
+        padding: 8px 12px;
+        border-radius: 5px;
+        width: 100px;
+        margin-left: 15px;
+        outline: none;
+        font-size: 16px;
+    }
+    .ask{
+        margin-bottom: 12px;
+    }
+</style>
+<body>
+    <main>
+        <h6 class="title">Yugurgani chiqamizmi?</h6>
+        <h1 class="yes-or-no"><span id="result"></span>HA / YO'Q</h1>
+        <form id="form">
+            <div class="ask">
+                <label for="">Havo harorati</label>
+                <input type="number" id="temprature">
+            </div>
+            <div class="ask">
+                <input type="checkbox" value="raining" id="raining">
+                <label for="raining">Yomg'ir yog'ayaptimi?</label>
+            </div>
+            <div class="ask">
+                <input type="checkbox" value="raining" id="gym">
+                <label for="gym">Trenajor zal ochiqmi?</label>
+            </div>
+        </form>
+    </main>
+
+
+    <script src="scripts/main.js"></script>
+</body>
+</html>
