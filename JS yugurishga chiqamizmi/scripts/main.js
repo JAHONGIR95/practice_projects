@@ -19,73 +19,38 @@ function tempChecking() {
 
     if (temp >= 5 && temp <= 30) {
         result.innerHTML = (`<span style="color: green;"> HA</span>`);
-    }
-    else {
+    } else {
         result.innerHTML = (`<span style="color: red;"> YO'Q</span>`);
     }
 }
 
+var rain = false; //checkbox ning dastlabki qiymatiga false berdim 
+var zal = false; // gym ning checkbox sining dastlabki qiymatiga false berdim
 
-function tekshirish(){
-    // console.log(rainings());
+raining.addEventListener('click', function () {
     
-    var rain = false; //checkbox ning dastlabki qiymatiga false berdim 
-    var zal = false; // gym ning checkbox sining dastlabki qiymatiga false berdim
-    
-    ask.addEventListener('change', function(e){
-        e.preventDefault();
-        
-        
-        // Yomg'ir yog'ayotganimi tekshirish
-        raining.addEventListener('click', function (e) {
-            e.preventDefault();
-            
-            rainings();
-        })
-        
-        
-        
-        // is GYM open? checking
-        gym.addEventListener('click', function (e) {
-            e.preventDefault();
-            
-            gymOpen();
-        })
-        
-        function rainings() {
-            rain = !rain;
-            
-            // console.log(rain);
-            
-            if (rain == true) {
-                result.innerHTML = (`<span style="color: red;"> YO'Q</span>`);
-            } else {
-                result.innerHTML = (`<span style="color: green;"> HA</span>`);
-            }
-        }
-        
-        function gymOpen(){
-            
-            zal = !zal;
-        
-            // console.log(zal);
-        
-            if(zal == true){
-                result.innerHTML = (`<span style="color: red;"> YO'Q</span>`);
-            } else {
-                result.innerHTML = (`<span style="color: green;"> HA</span>`);
-            }
-        }
+    rainings();
+})
 
+gym.addEventListener('click', function () {
 
-        // if(rain == true && zal == true){
-        //     alert('yuguramiz');
-        // }
-        
-        console.log(rain);
-        console.log(zal);
-    })
+    gymOpen();
+})
+
+function rainings() {
+    rain = !rain;
     
+    if (rain) {
+        result.innerHTML = (`<span style="color: red;"> YO'Q</span>`);
+    } 
 }
-tekshirish();
+
+function gymOpen(){    
+    zal = !zal;
+    
+    if(zal){
+        result.innerHTML = (`<span style="color: green;"> HA</span>`);
+    } 
+}
+
 
