@@ -1,14 +1,36 @@
 var form = document.querySelector('#form'); // form
 var masofa = document.querySelector('#distance'); // user input
-var result = document.querySelector('#result'); //natija oynasi
+var result1 = document.querySelector('#result'); //natija oynasi
 var result2 = document.querySelector('#result2'); //natija oynasi 2
 var result3 = document.querySelector('#result3'); //natija oynasi 3
 var result4 = document.querySelector('#result4'); //natija oynasi 4
+var speed = [3.6, 12.1, 70, 800];
+console.log(speed[1]);
 
 
-form.addEventListener('submit', function(e){
+
+form.addEventListener('submit', function (e) {
     e.preventDefault();
-    
+
+    // for ( var i = 0; i <= speed.length; i++) {
+    //     var distance = parseInt(masofa.value);
+    //     var time = (distance / speed[0]);
+    //     var fixedTime = time.toFixed(2);
+
+    //     totalTime = fixedTime * 60;
+
+    //     for (j = 0; j <= speed.length; j++){
+
+    //         if (totalTime % 60 == 0) {
+    //             result1.textContent = time + ' soat';
+    //         } else {
+    //             var minut = (totalTime % 60).toFixed(0);
+    //             var soat = totalTime / 60;
+    //             result[1].innerHTML = Math.floor(soat) + ' soat' + '<br>' + minut + ' daqiqa';
+    //         }
+    //     }
+    // }
+
     piyoda();
     bike();
     car();
@@ -21,7 +43,7 @@ function piyoda() {
     var fixedTime = time.toFixed(2);
 
     totalTime = fixedTime * 60;
-    
+
     if(totalTime % 60 == 0){
         result.textContent = time + ' soat';
     } else {
@@ -37,7 +59,7 @@ function bike() {
     var fixedTime = time.toFixed(2);
 
     totalTime = fixedTime * 60;
-    
+
     if(totalTime % 60 == 0){
         result2.textContent = time + ' soat';
     } else {
@@ -53,7 +75,7 @@ function car() {
     var fixedTime = time.toFixed(2);
 
     totalTime = fixedTime * 60;
-    
+
     if(totalTime % 60 == 0){
         result3.textContent = time + ' soat';
     } else {
@@ -69,7 +91,7 @@ function airplane() {
     var fixedTime = time.toFixed(2);
 
     totalTime = fixedTime * 60;
-    
+
     if(totalTime % 60 == 0){
         result4.textContent = time + ' soat';
     } else {
