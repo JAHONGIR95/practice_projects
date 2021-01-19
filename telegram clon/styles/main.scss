@@ -1,0 +1,68 @@
+$mainColor: #0E1621;
+$topColor: #1F2936;
+$burgerColor: #6C7883;
+$messageColor: #17212B;
+$hoverColor: #1E2C3A;
+
+body{
+    margin: 0;
+    padding: 0;
+    background-color: $mainColor;
+}
+
+h1, h2, h3, h4, h5, h6, p{
+    margin: 0;
+    padding: 0;
+}
+
+.top{
+    background-color: $topColor;
+
+    &__button{
+        display: flex;
+        align-items: flex-end;
+        justify-content: flex-end;
+
+        .button1{
+
+            span{  
+                display: block;
+                width: 14px;
+                height: 2px;
+                background-color: $burgerColor;
+                
+            }
+        } 
+
+        .button2 {
+            width: 14px;
+            height: 12px;
+            border: 2px solid $burgerColor;
+            box-sizing: border-box;
+        }
+
+        .button3 span{
+            display: block;
+            width: 16px;
+            height: 2px;
+            background-color: $burgerColor;
+            margin-bottom: 10px;    
+
+            &:last-child{
+                margin-bottom: 0;
+                transform-origin: left;
+                transform: rotate(-45deg);
+            }
+
+            &:first-child{
+                transform-origin: left;
+                transform: rotate(45deg) translate(1px);
+            }
+
+        }
+    }
+}
+
+.message-area{
+    background-color: $messageColor;
+}

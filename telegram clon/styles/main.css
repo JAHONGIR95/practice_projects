@@ -1,1 +1,69 @@
-/* No CSS *//*# sourceMappingURL=main.css.map */
+body {
+  margin: 0;
+  padding: 0;
+  background-color: #0E1621;
+}
+
+h1, h2, h3, h4, h5, h6, p {
+  margin: 0;
+  padding: 0;
+}
+
+.top {
+  background-color: #1F2936;
+}
+
+.top__button {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: end;
+      -ms-flex-align: end;
+          align-items: flex-end;
+  -webkit-box-pack: end;
+      -ms-flex-pack: end;
+          justify-content: flex-end;
+}
+
+.top__button .button1 span {
+  display: block;
+  width: 14px;
+  height: 2px;
+  background-color: #6C7883;
+}
+
+.top__button .button2 {
+  width: 14px;
+  height: 12px;
+  border: 2px solid #6C7883;
+  -webkit-box-sizing: border-box;
+          box-sizing: border-box;
+}
+
+.top__button .button3 span {
+  display: block;
+  width: 16px;
+  height: 2px;
+  background-color: #6C7883;
+  margin-bottom: 10px;
+}
+
+.top__button .button3 span:last-child {
+  margin-bottom: 0;
+  -webkit-transform-origin: left;
+          transform-origin: left;
+  -webkit-transform: rotate(-45deg);
+          transform: rotate(-45deg);
+}
+
+.top__button .button3 span:first-child {
+  -webkit-transform-origin: left;
+          transform-origin: left;
+  -webkit-transform: rotate(45deg) translate(1px);
+          transform: rotate(45deg) translate(1px);
+}
+
+.message-area {
+  background-color: #17212B;
+}
+/*# sourceMappingURL=main.css.map */
