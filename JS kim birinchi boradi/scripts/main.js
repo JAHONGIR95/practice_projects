@@ -11,24 +11,22 @@ console.log(speed[1]);
 
 form.addEventListener('submit', function (e) {
     e.preventDefault();
-
+    
+    // var distance = parseInt(masofa.value);
     // for ( var i = 0; i <= speed.length; i++) {
-    //     var distance = parseInt(masofa.value);
     //     var time = (distance / speed[0]);
     //     var fixedTime = time.toFixed(2);
 
     //     totalTime = fixedTime * 60;
 
-    //     for (j = 0; j <= speed.length; j++){
 
     //         if (totalTime % 60 == 0) {
-    //             result1.textContent = time + ' soat';
+    //             result[i].innerHTML = time + ' soat';
     //         } else {
     //             var minut = (totalTime % 60).toFixed(0);
     //             var soat = totalTime / 60;
-    //             result[1].innerHTML = Math.floor(soat) + ' soat' + '<br>' + minut + ' daqiqa';
+    //             result[i].innerHTML = Math.floor(soat) + ' soat' + '<br>' + minut + ' daqiqa';
     //         }
-    //     }
     // }
 
     piyoda();
@@ -38,18 +36,18 @@ form.addEventListener('submit', function (e) {
 })
 
 function piyoda() {
-    var distance = parseInt(masofa.value); 
+var distance = parseInt(masofa.value); 
     var time =  (distance / 3.6);
     var fixedTime = time.toFixed(2);
 
     totalTime = fixedTime * 60;
 
     if(totalTime % 60 == 0){
-        result.textContent = time + ' soat';
+        result1.textContent = time + ' soat';
     } else {
         var minut = (totalTime % 60).toFixed(0);
         var soat = totalTime / 60;
-        result.innerHTML = Math.floor(soat) + ' soat'  + '<br>' + minut + ' daqiqa';
+        result1.innerHTML = Math.floor(soat) + ' soat'  + '<br>' + minut + ' daqiqa';
     }
 }
 

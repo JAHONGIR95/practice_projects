@@ -65,4 +65,103 @@ h1, h2, h3, h4, h5, h6, p{
 
 .message-area{
     background-color: $messageColor;
+    height: calc(100vh - 22px);
+    padding: 15px 0;
+    overflow-y: scroll;
+
+    &__top{
+        display: flex;
+        align-items: center;
+        padding: 0 15px;
+
+        input{
+            background: none;
+            border: none;
+            outline: none;
+            background-color: $topColor;
+            padding: 8px 15px;
+            width: 100%;
+            border-radius: 5px;
+            
+            &:focus{
+                color: #b8b1b1;
+                
+                &::placeholder{
+                    color: #b8b1b1;
+                }
+            }
+        }
+        
+        .burger-menu{
+
+            margin-left: 10px;
+            margin-right: 20px;
+            transition: all ease .3s;
+            
+            &:hover span{
+                background-color: #fff;
+            }
+            span{
+                display: block;
+                width: 24px;
+                height: 2px;
+                background-color: $burgerColor;
+                margin-bottom: 5px;
+
+
+                &:last-child{
+                    margin-bottom: 0;
+                }
+            }
+        }
+    }
+}
+
+.message{
+
+    padding: 0 15px;
+
+    &:hover{
+        background-color: rgba(108, 129, 151, 0.335);
+        cursor: pointer;
+    }
+
+    &__image{
+        width: 50px;
+        height: 50px;
+        border-radius: 50%;
+    }
+
+    .data{
+
+        &__person-name{
+            color: white;
+            margin-bottom: 7px;
+        }
+
+        &__write{
+
+            font-size: 12px;
+            color: rgb(161, 161, 248);
+            font-weight: 300;
+            margin-right: 3px;
+            .writer-message{
+                color: #6c8197;
+
+            }
+        }
+    }
+
+    .info{
+
+        &__time{
+            color: #6c8197;
+            font-size: 12px;
+            margin-bottom: 7px;
+        }
+
+        &__num{
+            // font-size: ;
+        }
+    }
 }
