@@ -2,4 +2,10 @@ body {
   margin: 0;
   padding: 0;
 }
+
+.form-card {
+  max-width: 600px;
+  margin-right: auto;
+  margin-left: auto;
+}
 /*# sourceMappingURL=main.css.map */

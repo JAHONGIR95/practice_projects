@@ -1,5 +1,6 @@
 <!DOCTYPE html>
 <html lang="en">
+
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
@@ -7,11 +8,29 @@
     <link rel="stylesheet" href="styles/main.css">
     <title>Todo list</title>
 </head>
+
 <body>
-    
-    <h1>Hello world</h1>
+    <div class="card form-card mt-5">
+        <div class="card-header">
+            Salom
+        </div>
+        <div class="card-body">
+            <form id="todo-form" class="d-flex align-items-center">
+                <input type="text" id="todo-input" class="form-control me-3" placeholder="Qilinadigan vazifani kiriting">
+                <button type="submit" class="btn btn-primary">Qo'shish</button>
+            </form>
+            <ul class="list-group my-2">
+                <li class="list-group-item d-flex align-items-center justify-content-between">Salooom!<button class="btn btn-outline-danger">O'chirish</button></li>
+            </ul>
+        </div>
+        <div class="card-footer">
+            <button class="btn btn-success">Saqlash</button>
+        </div>
+    </div>
+
 
     <script src="libs/bootstrap/bootstrap.min.js"></script>
     <script src="scripts/main.js"></script>
 </body>
+
 </html>
