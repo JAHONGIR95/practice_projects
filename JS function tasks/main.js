@@ -11,21 +11,35 @@ factorialFinder(5);
 console.log('******************** 10 va 30 oralig\'i *****************');
 
 var total = 0;
-function oddFinder(){
-    for(i = 10; i <= 30; i++){
+function oddFinder(a, b){
+    for(i = a; i <= b; i++){
         if(i % 2 !== 0){
             total += i;
         }
     }
     console.log('Yig\'indi: ' + total);
 }
-oddFinder();
+oddFinder(10, 30);
 console.log('******************** Array yig\'indisi *****************');
 
 var sum = 0;
-function sumArray([x1, x2, x3, x4, x5]){
+var mark = [1, -1,  8, 6, 4];
+function sumArray(mark){
 
-    sum += x1 + x2 + x3 + x4 + x5
+    for(i = 0; i < mark.length; i++){
+        sum += mark[i];
+    }
     console.log('Array yig\'indisi: ' + sum);
 }
-sumArray([1, -1, 8, 6, 4]);
+sumArray(mark);
+
+
+var arr = [1, 5, 4, 9, 3, 16];
+var max = arr[0];
+
+for(var i = 0; i < arr.length; i++){
+    if(arr[i] > max){
+        max = arr[i];
+    }
+}
+console.log('max: ' + max);
