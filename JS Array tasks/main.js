@@ -15,6 +15,10 @@ console.log('*************** task 2 *****************');
 var mark = [1, -1, 2, -5, 6];
 function positiveNumbers(mark){
     for(var i = 0; i < mark.length; i++){
-        
+        if(mark[i] > 0){
+            console.log(mark[i]);
+        }
     }
 }
+positiveNumbers(mark);
+console.log('*************** task 3 *****************');
