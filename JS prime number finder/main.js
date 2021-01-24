@@ -1,6 +1,5 @@
-
-function tubSon(num, num2){
-    for(var i = num; i <= num2; i++){
+function tubSon(num){
+    for(var i = 2; i <= num; i++){
         let tub = true;
         for(var j = 2; j < i; j++){
             if(i % j == 0){
@@ -13,5 +12,19 @@ function tubSon(num, num2){
         }
     }
 }
+tubSon(100);
 
-tubSon(2, 125);
+var primeNumberDecisionMaker = function(num){
+    var prime = true;
+    for(i = 2; i < num; i++){
+        if(num % i == 0){
+            prime = false;
+            console.log(num + ' tub son emas');
+            break;
+        }
+    }
+    if(prime){
+    console.log(num + ' tub son');
+    }
+}
+primeNumberDecisionMaker(16);
