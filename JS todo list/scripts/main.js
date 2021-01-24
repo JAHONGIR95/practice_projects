@@ -1,7 +1,7 @@
 var todoForm = document.querySelector('#todo-form');
 var todoInput = document.querySelector('#todo-input');
 var todoListHolder = document.querySelector('#list-item-holder');
-var todosCount = document.querySelector('#')
+var todosCount = document.querySelector('#todos-count');
 
 var todos = [];
 var todoItemInitialId = 0;
@@ -19,6 +19,8 @@ function removeTodo(todoId) {
             todos.splice(i, 1);
         }
     }
+
+    todosCount.innerHTML = todos.length;
 }
 
 function createHtmlElement(todoTitle, todoId) {
@@ -55,6 +57,6 @@ todoForm.addEventListener('submit', function (e) {
         createTodo(todoInput.value);
     }
     todoForm.reset();
-
+    todosCount.innerHTML = todos.length;
 
 })
