@@ -1,13 +1,127 @@
 <!DOCTYPE html>
 <html lang="en">
+
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <link rel="stylesheet" href="styles/main.css">
     <title>Document</title>
 </head>
+
 <body>
-    
+    <main>
+        <h4 class="title">
+            CARD
+        </h4>
+        <div class="card">
+            <div class="card__top">
+                <h2 id="your-bank">
+                    Your Bank
+                </h2>
+            </div>
+            <div class="card__middle">
+                <img src="images/chip.png" alt="" class="chip">
+            </div>
+            <form action="https://echo.htmlacademy.ru">
+                <input type="number" name="card_type" id="input1" class="input1">
+                <input type="number" name="band_name" id="input2" class="input2">
+                <input type="text">
+                <input type="text">
+            </form>
+            <div class="card__date">
+                <div class="date-info">
+                    <p class="month">moth / year</p>
+                    <h4 class="date">12/99</h4>
+                </div>
+            </div>
+            <p class="owner">
+                Max Mustermann
+            </p>
+        </div>
+
+        <div class="data">
+            <div class="row">
+                <div class="row__left">
+                    <img src="images/lock.svg" alt="">
+                    <div class="row-info">
+                        <h5 class="row-info__title">
+                            Lock card
+                        </h5>
+                        <p class="row-info__text">
+                            You can unlock it later
+                        </p>
+                    </div>
+                </div>
+                <div class="row__right">
+                    <label class="switch">
+                        <input type="checkbox">
+                        <span class="slider round"></span>
+                    </label>
+                </div>
+            </div>
+            <div class="row">
+                <div class="row__left">
+                    <img src="images/plane.svg" alt="">
+                    <div class="row-info">
+                        <h5 class="row-info__title">
+                            Payments abroad
+                        </h5>
+                        <p class="row-info__text">
+                            Enable your card abroad
+                        </p>
+                    </div>
+                </div>
+                <div class="row__right">
+                    <label class="switch">
+                        <input type="checkbox">
+                        <span class="slider round"></span>
+                    </label>
+                </div>
+            </div>
+            <div class="row">
+                <div class="row__left">
+                    <img src="images/laptop.svg" alt="">
+                    <div class="row-info">
+                        <h5 class="row-info__title">
+                            Online payments
+                        </h5>
+                        <p class="row-info__text">
+                            Enable online transactions
+                        </p>
+                    </div>
+                </div>
+                <div class="row__right">
+                    <label class="switch">
+                        <input type="checkbox">
+                        <span class="slider round"></span>
+                    </label>
+                </div>
+            </div>
+            <div class="row">
+                <div class="row__left">
+                    <img src="images/atm.svg" alt="">
+                    <div class="row-info">
+                        <h5 class="row-info__title">
+                            ATM withdrawals
+                        </h5>
+                        <p class="row-info__text">
+                            Enable ATM withdrawals
+                        </p>
+                    </div>
+                </div>
+                <div class="row__right">
+                    <label class="switch">
+                        <input type="checkbox">
+                        <span class="slider round"></span>
+                    </label>
+                </div>
+            </div>
+        </div>
+
+    </main>
+
+
     <script src="scripts/main.js"></script>
 </body>
+
 </html>

@@ -1,0 +1,197 @@
+.switch {
+    position: relative;
+    display: inline-block;
+    width: 60px;
+    height: 34px;
+  }
+  
+  /* Hide default HTML checkbox */
+  .switch input {
+    opacity: 0;
+    width: 0;
+    height: 0;
+  }
+  
+  /* The slider */
+  .slider {
+    position: absolute;
+    cursor: pointer;
+    top: 0;
+    left: 0;
+    right: 0;
+    bottom: 0;
+    background-color: #ccc;
+    -webkit-transition: .4s;
+    transition: .4s;
+  }
+  
+  .slider:before {
+    position: absolute;
+    content: "";
+    height: 32px;
+    width: 32px;
+    left: 1px;
+    bottom: 1px;
+    background-color: white;
+    -webkit-transition: .4s;
+    transition: .4s;
+  }
+  
+  input:checked + .slider {
+    background-color: #2196F3;
+  }
+  
+  input:focus + .slider {
+    box-shadow: 0 0 1px #2196F3;
+  }
+  
+  input:checked + .slider:before {
+    -webkit-transform: translateX(26px);
+    -ms-transform: translateX(26px);
+    transform: translateX(26px);
+  }
+  
+  /* Rounded sliders */
+  .slider.round {
+    border-radius: 34px;
+  }
+  
+  .slider.round:before {
+    border-radius: 50%;
+  }
+
+body{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    font-family: Arial, Helvetica, sans-serif;
+    margin: 0;
+    padding: 0;
+}
+
+h1, h2, h3, h4, h5, h6, p{
+    margin: 0;
+    padding: 0;
+}
+
+main{
+    width: 400px;
+    background: linear-gradient(35deg,white 65%, blue 65%);
+    height: 600px;
+    border: 15px solid #000;
+    border-radius: 25px;
+
+    .title{
+        text-align: center;
+        color: #fff;
+        margin-bottom: 30px;
+        margin-top: 25px;
+    }
+
+    .card{
+        background-color: #313131;
+        width: 80%;
+        margin-right: auto;
+        margin-left: auto;
+        border-radius: 15px;
+        padding: 15px 25px;
+        margin-bottom: 40px;
+
+        &__top{
+            color: #fff;
+            text-align: right;
+        }
+
+        &__middle{
+            margin-bottom: 20px;
+
+            .chip{
+                width: 45px;
+                height: 35px;
+            }
+        }
+        form{
+            display: flex;
+            align-items: center;
+            justify-content: space-between;
+            margin-bottom: 25px;
+
+            input{
+                width: 22%;
+                padding: 3px 2px;
+                background: none;
+                outline: none;
+                border: none;
+                border-bottom: 1px solid #fff;
+                color: #fff;
+            }
+        }
+
+        &__date{
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            margin-bottom: 5px;
+
+            .date-info{
+                display: flex;
+                align-items: center;
+                justify-content: center;
+                flex-direction: column;
+
+                .month{
+                    color: #fff;
+                    font-size: 10px;
+                    margin-bottom: 5px;
+                }
+
+                .date{
+                    color: #fff;
+                    font-size: 18px;
+                    font-weight: 400;
+                    letter-spacing: 1px;
+                }
+            }
+        }
+        .owner{
+            font-size: 17px;
+            color: rgb(209, 197, 197);
+            font-weight: 400;
+        }
+    }
+
+    .data{
+
+        width: 80%;
+        margin-right: auto;
+        margin-left: auto;
+
+        .row{
+            display: flex;
+            align-items: center;
+            justify-content: space-between;
+            margin-bottom: 25px;
+
+            &__left{
+                display: flex;
+                align-items: center;
+                
+                img{
+                    margin-right: 15px;
+                }
+
+                .row-info{
+
+                    &__title{
+                        font-size: 17px;
+                        font-weight: 600;
+                    }
+                    &__text{
+                        font-size: 11px;
+                        color: rgb(124, 114, 114);
+                    }
+                }
+            }
+        }
+    }
+}

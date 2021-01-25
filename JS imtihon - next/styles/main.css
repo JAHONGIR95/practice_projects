@@ -1,1 +1,234 @@
-/* No CSS *//*# sourceMappingURL=main.css.map */
+.switch {
+  position: relative;
+  display: inline-block;
+  width: 60px;
+  height: 34px;
+}
+
+/* Hide default HTML checkbox */
+.switch input {
+  opacity: 0;
+  width: 0;
+  height: 0;
+}
+
+/* The slider */
+.slider {
+  position: absolute;
+  cursor: pointer;
+  top: 0;
+  left: 0;
+  right: 0;
+  bottom: 0;
+  background-color: #ccc;
+  -webkit-transition: .4s;
+  transition: .4s;
+}
+
+.slider:before {
+  position: absolute;
+  content: "";
+  height: 32px;
+  width: 32px;
+  left: 1px;
+  bottom: 1px;
+  background-color: white;
+  -webkit-transition: .4s;
+  transition: .4s;
+}
+
+input:checked + .slider {
+  background-color: #2196F3;
+}
+
+input:focus + .slider {
+  -webkit-box-shadow: 0 0 1px #2196F3;
+          box-shadow: 0 0 1px #2196F3;
+}
+
+input:checked + .slider:before {
+  -webkit-transform: translateX(26px);
+  transform: translateX(26px);
+}
+
+/* Rounded sliders */
+.slider.round {
+  border-radius: 34px;
+}
+
+.slider.round:before {
+  border-radius: 50%;
+}
+
+body {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  font-family: Arial, Helvetica, sans-serif;
+  margin: 0;
+  padding: 0;
+}
+
+h1, h2, h3, h4, h5, h6, p {
+  margin: 0;
+  padding: 0;
+}
+
+main {
+  width: 400px;
+  background: linear-gradient(35deg, white 65%, blue 65%);
+  height: 600px;
+  border: 15px solid #000;
+  border-radius: 25px;
+}
+
+main .title {
+  text-align: center;
+  color: #fff;
+  margin-bottom: 30px;
+  margin-top: 25px;
+}
+
+main .card {
+  background-color: #313131;
+  width: 80%;
+  margin-right: auto;
+  margin-left: auto;
+  border-radius: 15px;
+  padding: 15px 25px;
+  margin-bottom: 40px;
+}
+
+main .card__top {
+  color: #fff;
+  text-align: right;
+}
+
+main .card__middle {
+  margin-bottom: 20px;
+}
+
+main .card__middle .chip {
+  width: 45px;
+  height: 35px;
+}
+
+main .card form {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+  margin-bottom: 25px;
+}
+
+main .card form input {
+  width: 22%;
+  padding: 3px 2px;
+  background: none;
+  outline: none;
+  border: none;
+  border-bottom: 1px solid #fff;
+  color: #fff;
+}
+
+main .card__date {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  margin-bottom: 5px;
+}
+
+main .card__date .date-info {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+}
+
+main .card__date .date-info .month {
+  color: #fff;
+  font-size: 10px;
+  margin-bottom: 5px;
+}
+
+main .card__date .date-info .date {
+  color: #fff;
+  font-size: 18px;
+  font-weight: 400;
+  letter-spacing: 1px;
+}
+
+main .card .owner {
+  font-size: 17px;
+  color: #d1c5c5;
+  font-weight: 400;
+}
+
+main .data {
+  width: 80%;
+  margin-right: auto;
+  margin-left: auto;
+}
+
+main .data .row {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+  margin-bottom: 25px;
+}
+
+main .data .row__left {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+}
+
+main .data .row__left img {
+  margin-right: 15px;
+}
+
+main .data .row__left .row-info__title {
+  font-size: 17px;
+  font-weight: 600;
+}
+
+main .data .row__left .row-info__text {
+  font-size: 11px;
+  color: #7c7272;
+}
+/*# sourceMappingURL=main.css.map */
