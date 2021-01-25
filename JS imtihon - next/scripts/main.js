@@ -1,5 +1,31 @@
 var inputBank = document.querySelector('#input2');
 var yourBank = document.querySelector('#your-bank');
+var cardSelection = document.querySelector('#card-selection');
+var inputCart = document.querySelector('#input1');
+var imageWrapper = document.querySelector('.image-wrapper');
+
+inputCart.addEventListener('keyup', function () {
+
+    switch (inputCart.value) {
+        case '9860':
+            cardSelection.setAttribute('src', './images/humo.png');
+            break;
+
+        case '8600':
+            cardSelection.setAttribute('src', './images/uzcard.png');
+            break;
+
+        case '4278':
+            cardSelection.setAttribute('src', './images/visa.png');
+            break;
+
+        case '5300':
+            cardSelection.setAttribute('src', './images/mastercard.png');
+            break;
+        // default:
+    }
+})
+
 
 inputBank.addEventListener('keyup', function () {
 
@@ -23,7 +49,4 @@ inputBank.addEventListener('keyup', function () {
             yourBank.textContent = 'Xalq';
             break;
     }
-
-
-    console.log(inputBank.value);
 })

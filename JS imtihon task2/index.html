@@ -11,14 +11,16 @@
 
 <body>
     <div class="container">
-        <nav class="my-4" style="--bs-breadcrumb-divider: url(&#34;data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' width='8' height='8'%3E%3Cpath d='M2.5 0L1 1.5 3.5 4 1 6.5 2.5 8l4-4-4-4z' fill='currentColor'/%3E%3C/svg%3E&#34;);" aria-label="breadcrumb">
+        <nav class="my-4"
+            style="--bs-breadcrumb-divider: url(&#34;data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' width='8' height='8'%3E%3Cpath d='M2.5 0L1 1.5 3.5 4 1 6.5 2.5 8l4-4-4-4z' fill='currentColor'/%3E%3C/svg%3E&#34;);"
+            aria-label="breadcrumb">
             <ol class="breadcrumb">
-              <li class="breadcrumb-item"><a href="#" class="text-muted">Card</a></li>
-              <li class="breadcrumb-item"><a href="#" class="text-muted">Customer Information</a></li>
-              <li class="breadcrumb-item"><a href="#" class="text-muted">Shipping method</a></li>
-              <li class="breadcrumb-item active text-dark fw-bolder" aria-current="page">Library</li>
+                <li class="breadcrumb-item"><a href="#" class="text-muted">Card</a></li>
+                <li class="breadcrumb-item"><a href="#" class="text-muted">Customer Information</a></li>
+                <li class="breadcrumb-item"><a href="#" class="text-muted">Shipping method</a></li>
+                <li class="breadcrumb-item active text-dark fw-bolder" aria-current="page">Library</li>
             </ol>
-          </nav>
+        </nav>
         <div class="row mt-5">
             <div class="col-lg-8 col-md-12">
                 <div class="payment shadow rounded p-4 mb-4">
@@ -27,48 +29,47 @@
                     </h2>
                     <form action="https://echo.htmlacademy.ru" class="text-muted">
                         <label for="" class="mb-2">CARD NUMBER</label>
-                        <input type="number" class="form-control mb-3" placeholder="**** **** **** ****" name="" id="">
+                        <input type="number" name="card_number" class="form-control mb-3" placeholder="**** **** **** ****" name="" id="">
                         <div class="row">
                             <div class="col-lg-8 col-md-8 col-sm-12">
-                                <label for="" class="mb-2">CARD NUMBER</label>
-                                <input type="text" class="form-control" placeholder="Michael Jordan" name="" id="">
+                                <label for="" class="mb-2">CARD HOLDER</label>
+                                <input type="text" name="card_holder" class="form-control" placeholder="Michael Jordan" name="" id="">
                             </div>
                             <div class="col-lg-2 col-md-2 col-sm-6">
                                 <label for="" class="mb-2">exp.date</label>
-                                <input type="number" class="form-control" placeholder="03/19">
+                                <input type="number" name="exp_date" class="form-control" placeholder="03/19">
                             </div>
                             <div class="col-lg-2 col-md-2 col-sm-6">
                                 <label for="" class="mb-2">cvc</label>
-                                <input type="number" class="form-control" placeholder="***">
+                                <input type="number" name="cvc" class="form-control" placeholder="***">
                             </div>
                         </div>
-                    </form>
+
                 </div>
                 <div class="billing shadow rounded py-4 mb-5">
                     <h2 class="mb-5 px-4">
                         Billing address
                     </h2>
-                    <form action="https://echo.htmlacademy.ru">
-                        <div class="form-check mb-3 border-bottom pb-3">
-                            <div class="rad">
-                                <input class="form-check-input " name="radio-btn" type="radio" id="ra1">
-                                <label class="form-check-label label-radio" for="ra1">
-                                    Same as the shipping address
-                                </label>
-                            </div>
-                        </div>
-                        <div class="form-check rad">
-                            <input class="form-check-input" name="radio-btn" type="radio" id="ra">
-                            <label class="form-check-label label-radio" for="ra">
-                                Use a different billing address
+                    <div class="form-check mb-3 border-bottom pb-3">
+                        <div class="rad">
+                            <input class="form-check-input" value="as_shipping_address" name="radio-btn" type="radio" id="ra1">
+                            <label class="form-check-label label-radio" for="ra1">
+                                Same as the shipping address
                             </label>
                         </div>
-                    </form>
+                    </div>
+                    <div class="form-check rad">
+                        <input class="form-check-input" value="use_billing address" name="radio-btn" type="radio" id="ra">
+                        <label class="form-check-label label-radio" for="ra">
+                            Use a different billing address
+                        </label>
+                    </div>
                 </div>
                 <footer class="d-flex align-items-center justify-content-between mb-5">
                     <a href="#">Return to shipping method</a>
                     <button type="submit" class="btn btn-primary">Complete order</button>
                 </footer>
+                </form>
             </div>
             <div class="col-lg-4 col-md-12">
                 <div class="chocolate-bar p-4 shadow rounded">
