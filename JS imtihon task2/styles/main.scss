@@ -1,0 +1,74 @@
+body{
+    background-color: #FAFAFA;
+}
+
+label{
+    font-size:13px;
+    font-weight: 500;
+    text-transform: uppercase;
+    color: #B4B6B9;
+}
+
+.payment{
+    background-color: #fff;
+}
+
+.label-radio{
+    color: #000;
+    font-size: 12px;
+}
+
+.rad{
+    margin-left: 25px;
+    margin-right: 25px;
+    box-sizing: border-box;
+}
+
+.chocolate-bar{
+    background-color: #fff;
+
+    .choco{
+        
+        .chocolate{
+            width: 75px;
+            height: 60px;
+            padding: 10px;
+            border: 1px solid #B4B6B9;
+            border-radius: 5px;
+
+        }
+
+        .count{
+            position: relative;
+            top: -30px;
+            right: 15px;
+        }
+    }
+}
+.top{
+    font-size: 15px;
+    font-weight: 700;
+}
+
+.top-num{
+    font-size: 18px;
+    font-weight: 700;
+}
+.middle{
+    font-size: 14px;
+    font-weight: 600;
+}
+
+.middle2{
+    font-size: 16px;
+    font-weight: 650;
+}
+
+.bottom{
+    font-size: 20px;
+    font-weight: 700;
+}
+
+a{
+    text-decoration: none;
+}

@@ -1,5 +1,6 @@
 <!DOCTYPE html>
 <html lang="en">
+
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
@@ -7,11 +8,110 @@
     <link rel="stylesheet" href="styles/main.css">
     <title>Document</title>
 </head>
+
 <body>
-    <h1>hello world</h1>
-    
+    <div class="container">
+        <nav class="my-4" style="--bs-breadcrumb-divider: url(&#34;data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' width='8' height='8'%3E%3Cpath d='M2.5 0L1 1.5 3.5 4 1 6.5 2.5 8l4-4-4-4z' fill='currentColor'/%3E%3C/svg%3E&#34;);" aria-label="breadcrumb">
+            <ol class="breadcrumb">
+              <li class="breadcrumb-item"><a href="#" class="text-muted">Card</a></li>
+              <li class="breadcrumb-item"><a href="#" class="text-muted">Customer Information</a></li>
+              <li class="breadcrumb-item"><a href="#" class="text-muted">Shipping method</a></li>
+              <li class="breadcrumb-item active text-dark fw-bolder" aria-current="page">Library</li>
+            </ol>
+          </nav>
+        <div class="row mt-5">
+            <div class="col-lg-8 col-md-12">
+                <div class="payment shadow rounded p-4 mb-4">
+                    <h2 class="mb-4">
+                        Payment information
+                    </h2>
+                    <form action="https://echo.htmlacademy.ru" class="text-muted">
+                        <label for="" class="mb-2">CARD NUMBER</label>
+                        <input type="number" class="form-control mb-3" placeholder="**** **** **** ****" name="" id="">
+                        <div class="row">
+                            <div class="col-lg-8">
+                                <label for="" class="mb-2">CARD NUMBER</label>
+                                <input type="text" class="form-control" placeholder="Michael Jordan" name="" id="">
+                            </div>
+                            <div class="col-lg-2">
+                                <label for="" class="mb-2">exp.date</label>
+                                <input type="number" class="form-control" placeholder="03/19">
+                            </div>
+                            <div class="col-lg-2">
+                                <label for="" class="mb-2">cvc</label>
+                                <input type="number" class="form-control" placeholder="***">
+                            </div>
+                        </div>
+                    </form>
+                </div>
+                <div class="billing shadow rounded py-4 mb-5">
+                    <h2 class="mb-5 px-4">
+                        Billing address
+                    </h2>
+                    <form action="https://echo.htmlacademy.ru">
+                        <div class="form-check mb-3 border-bottom pb-3">
+                            <div class="rad">
+                                <input class="form-check-input " name="radio-btn" type="radio" id="ra1">
+                                <label class="form-check-label label-radio" for="ra1">
+                                    Same as the shipping address
+                                </label>
+                            </div>
+                        </div>
+                        <div class="form-check rad">
+                            <input class="form-check-input" name="radio-btn" type="radio" id="ra">
+                            <label class="form-check-label label-radio" for="ra">
+                                Use a different billing address
+                            </label>
+                        </div>
+                    </form>
+                </div>
+                <footer class="d-flex align-items-center justify-content-between mb-5">
+                    <a href="#">Return to shipping method</a>
+                    <button type="submit" class="btn btn-primary">Complete order</button>
+                </footer>
+            </div>
+            <div class="col-lg-4 col-md-12">
+                <div class="chocolate-bar p-4 shadow rounded">
+                    <div class="d-flex align-items-center justify-content-between pb-4 border-bottom mb-3">
+                        <div class="d-flex align-items-center">
+                            <div class="choco">
+                                <img src="images/order.jpg" class="chocolate" alt="">
+                                <div class="badge bg-primary rounded-pill count">2</div>
+                            </div>
+                            <p class="top">
+                                Chocolate-bar
+                            </p>
+                        </div>
+                        <h5 class="top-num">$2.49</h5>
+                    </div>
+                    <div class="d-flex align-items-center justify-content-between">
+                        <p class="middle">
+                            Subtotal
+                        </p>
+                        <p class="middle">$4.48</p>
+                    </div>
+                    <div class="d-flex align-items-center justify-content-between border-bottom mb-3">
+                        <p class="middle">
+                            Subtotal
+                        </p>
+                        <p class="middle">$4.48</p>
+                    </div>
+                    <div class="d-flex align-items-center justify-content-between mb-0 pb-0">
+                        <p class="middle2">
+                            Total
+                        </p>
+                        <h3 class="bottom">
+                            $7.98
+                        </h3>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+
 
     <script src="libs/bootstrap/bootstrap.min.js"></script>
     <script src="scripts/main.js"></script>
 </body>
+
 </html>
