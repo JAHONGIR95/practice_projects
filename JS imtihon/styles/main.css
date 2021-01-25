@@ -1,1 +1,81 @@
-/* No CSS *//*# sourceMappingURL=main.css.map */
+body {
+  margin: 0;
+  padding: 0;
+  font-family: 'Baloo 2', cursive;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  height: 100vh;
+}
+
+h1, h2, h3, h4, h5, h6, p {
+  margin: 0;
+  padding: 0;
+}
+
+main {
+  border: 40px solid #B09F98;
+  padding: 40px;
+  background-color: #D8CECC;
+}
+
+main #qoute-form {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+}
+
+main #qoute-form .btn {
+  font-size: 20px;
+  color: #fff;
+  padding: 15px;
+  background-color: #64B5AC;
+  outline: 4px solid #7e7eee;
+  -webkit-transition: all ease .5s;
+  transition: all ease .5s;
+  margin-bottom: 30px;
+  border: none;
+  display: block;
+  width: 200px;
+}
+
+main #qoute-form .btn:hover {
+  background-color: green;
+  cursor: pointer;
+}
+
+main #qoute-form textarea {
+  resize: none;
+  width: 400px;
+  height: 220px;
+  color: #6C757E;
+  font-size: 30px;
+  background: none;
+  margin-bottom: 20px;
+  border: none;
+}
+
+main .author {
+  font-size: 20px;
+  font-weight: 500;
+  color: #5baca0;
+  text-align: right;
+}
+/*# sourceMappingURL=main.css.map */

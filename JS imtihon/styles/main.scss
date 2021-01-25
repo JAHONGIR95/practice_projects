@@ -1,0 +1,62 @@
+body{
+    margin: 0;
+    padding: 0;
+    font-family: 'Baloo 2', cursive;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    height: 100vh;
+}
+
+h1, h2, h3, h4, h5, h6, p{
+    margin: 0;
+    padding: 0;
+}
+
+main{
+    border: 40px solid #B09F98;
+    padding: 40px;
+    background-color: #D8CECC;
+
+    #qoute-form{
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+
+        .btn{
+            font-size: 20px;
+            color: #fff;
+            padding: 15px;
+            background-color: #64B5AC;
+            outline: 4px solid rgb(126, 126, 238);
+            transition: all ease .5s;
+            margin-bottom: 30px;
+            border: none;
+            display: block;
+            width: 200px;
+            
+            &:hover{
+                background-color: green;
+                cursor: pointer;
+            }
+
+        }
+        textarea{
+            resize: none;
+            width: 400px;
+            height: 220px;
+            color: #6C757E;
+            font-size: 30px;
+            background: none;
+            margin-bottom: 20px;
+            border: none;
+        }
+    }
+    .author{
+        font-size: 20px;
+        font-weight: 500;
+        color: #5baca0;
+        text-align: right;
+    }
+}
