@@ -1,1 +1,13 @@
-/* No CSS *//*# sourceMappingURL=main.css.map */
+body {
+  background-color: #ebdddd;
+}
+
+.result {
+  color: #9393ec;
+  font-size: 120px;
+}
+
+.area {
+  border: 2px solid #0cad0c;
+}
+/*# sourceMappingURL=main.css.map */

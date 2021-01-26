@@ -1,15 +1,30 @@
 <!DOCTYPE html>
 <html lang="en">
+
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="libs/bootstrap/bootstrap.min.css">
     <link rel="stylesheet" href="styles/main.css">
     <title>project 5</title>
 </head>
+
 <body>
-    
+
+    <div class="row mt-5">
+        <div class="area col-lg-3 border-5 offset-4 bg-light rounded-3 p-5 d-flex align-items-center flex-column">
+            <h2 class="text-center text-success mb-2">
+                COUNTER
+            </h2>
+            <h1 class="result mb-3" id="result">0</h1>
+            <button class="btn btn-primary d-block mb-3 shadow" id="minus">Lower count</button>
+            <button class="btn btn-primary d-block shadow" id="plus">Add count</button>
+        </div>
+    </div>
 
 
+    <script src="libs/bootstrap/bootstrap.min.js"></script>
     <script src="scripts/main.js"></script>
 </body>
+
 </html>
