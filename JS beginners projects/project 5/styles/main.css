@@ -10,4 +10,12 @@ body {
 .area {
   border: 2px solid #0cad0c;
 }
+
+.green {
+  color: #1ab61a;
+}
+
+.red {
+  color: #ec4b4b;
+}
 /*# sourceMappingURL=main.css.map */
