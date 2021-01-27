@@ -24,6 +24,10 @@ body {
   background-position: center;
 }
 
+.card .card-body i {
+  color: blue;
+}
+
 .card .card-body h5 span {
   background-color: #888feb;
   color: #fff;
