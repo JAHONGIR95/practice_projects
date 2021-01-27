@@ -1,12 +1,29 @@
+body {
+  width: 100vw;
+  height: 100vh;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+}
+
 .image-slider {
-  width: 550px;
-  height: 350px;
-  overflow: hidden;
+  width: 750px;
+  height: 400px;
   margin-right: auto;
   margin-left: auto;
-  margin-top: 150px;
-  border: 2px solid #6d6dee;
+  border: 20px solid #6d6dee;
   border-radius: 5px;
   background-image: url(../images/car4.jpg);
+  background-repeat: no-repeat;
+  background-size: cover;
+  background-position: center;
+  -webkit-transition: all ease .3s;
+  transition: all ease .3s;
 }
 /*# sourceMappingURL=main.css.map */
