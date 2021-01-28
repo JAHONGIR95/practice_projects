@@ -11,6 +11,12 @@ h1, h2, h3, h4, h5, h6, p, a {
   background-position: top;
 }
 
+header {
+  background-color: #2693ec;
+  -webkit-transition: all ease .5s;
+  transition: all ease .5s;
+}
+
 .header {
   display: -webkit-box;
   display: -ms-flexbox;
@@ -26,29 +32,39 @@ h1, h2, h3, h4, h5, h6, p, a {
 
 .header__left {
   font-weight: 600;
-  border: 1px solid blue;
+  border: 1px solid #fff;
   padding: 7px;
   border-radius: 50%;
   -webkit-transition: all ease .5s;
   transition: all ease .5s;
+  color: #ffffff;
 }
 
 .header__left:hover {
   -webkit-transform: scale(1.1);
           transform: scale(1.1);
+  color: #fff;
 }
 
 .header__middle .brand {
-  padding: 10px;
+  color: #fff;
+  padding: 10px 20px;
+  -webkit-transition: all ease .3s;
+  transition: all ease .3s;
+}
+
+.header__middle .brand:hover {
+  background-color: rgba(255, 255, 255, 0.237);
 }
 
 .header__right {
   font-weight: 600;
-  border: 1px solid #000;
+  border: 1px solid #fff;
   padding: 5px 20px;
   border-radius: 17px;
   -webkit-transition: all ease .5s;
   transition: all ease .5s;
+  color: #fff;
   -webkit-transform: scale(1);
           transform: scale(1);
 }
@@ -56,6 +72,7 @@ h1, h2, h3, h4, h5, h6, p, a {
 .header__right:hover {
   -webkit-transform: scale(1.1);
           transform: scale(1.1);
+  color: #fff;
 }
 
 .header-bottom {
@@ -63,11 +80,26 @@ h1, h2, h3, h4, h5, h6, p, a {
 }
 
 .header-bottom .header-link {
-  width: 16.35%;
+  width: 16.38%;
   display: inline-block;
   text-align: center;
-  padding: 5px 0;
+  padding: 10px 0;
   font-size: 20px;
   font-weight: 600;
+  color: #fff;
+  -webkit-transition: all ease .5s;
+  transition: all ease .5s;
+}
+
+.header-bottom .header-link:hover {
+  background-color: rgba(255, 255, 255, 0.253);
+}
+
+.hero {
+  background-image: url(https://img.artlebedev.ru/everything_files/images/3494/tema.jpg);
+  background-repeat: no-repeat;
+  background-position: center;
+  width: 100%;
+  height: calc(100vh - 25px);
 }
 /*# sourceMappingURL=main.css.map */
