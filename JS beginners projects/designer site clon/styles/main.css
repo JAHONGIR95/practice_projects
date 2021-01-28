@@ -21,5 +21,53 @@ h1, h2, h3, h4, h5, h6, p, a {
   -webkit-box-pack: justify;
       -ms-flex-pack: justify;
           justify-content: space-between;
+  padding: 20px;
+}
+
+.header__left {
+  font-weight: 600;
+  border: 1px solid blue;
+  padding: 7px;
+  border-radius: 50%;
+  -webkit-transition: all ease .5s;
+  transition: all ease .5s;
+}
+
+.header__left:hover {
+  -webkit-transform: scale(1.1);
+          transform: scale(1.1);
+}
+
+.header__middle .brand {
+  padding: 10px;
+}
+
+.header__right {
+  font-weight: 600;
+  border: 1px solid #000;
+  padding: 5px 20px;
+  border-radius: 17px;
+  -webkit-transition: all ease .5s;
+  transition: all ease .5s;
+  -webkit-transform: scale(1);
+          transform: scale(1);
+}
+
+.header__right:hover {
+  -webkit-transform: scale(1.1);
+          transform: scale(1.1);
+}
+
+.header-bottom {
+  width: 100%;
+}
+
+.header-bottom .header-link {
+  width: 16.35%;
+  display: inline-block;
+  text-align: center;
+  padding: 5px 0;
+  font-size: 20px;
+  font-weight: 600;
 }
 /*# sourceMappingURL=main.css.map */
