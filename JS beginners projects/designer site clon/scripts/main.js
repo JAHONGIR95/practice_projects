@@ -1,8 +1,8 @@
 var brand = document.querySelector('#brand');
 
 var colorArr = [
-    'pink',
     'orange',
+    'pink',
     'black',
     'grey',
     'purple',
