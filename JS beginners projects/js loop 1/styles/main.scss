@@ -1,0 +1,36 @@
+body{
+    margin: 0;
+    padding: 0;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    height: 100vh;
+}
+
+.button-wrapper{
+    border: 2px solid blue;
+    border-radius: 5px;
+    overflow: hidden;
+    
+    .buttons{
+        width: 150px;
+        height: 40px;
+        padding: 0;
+        margin: 0;
+        border: none;
+        outline: none;
+
+        // &:hover{
+        //     background-color: blue;
+        // }
+    }
+
+}
+
+#select{
+    width: 250px;
+    height: 50px;
+    overflow: hidden;
+    border-radius: 5px;
+   
+}
