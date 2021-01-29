@@ -28,7 +28,6 @@ h1, h2, h3, h4, h5, h6, p{
                 0px 15px 15px rgba(77, 52, 77, 0.05),
                 inset 0px 15px 15px rgba(77, 52, 77, 0.3);
 
-
     &::before{
         content: '';
         position: absolute;
@@ -45,7 +44,7 @@ h1, h2, h3, h4, h5, h6, p{
         position: absolute;
     }
 
-    .hour, hr{
+    .hour, .hr{
         width: 160px;
         height: 160px;
     }
@@ -60,9 +59,8 @@ h1, h2, h3, h4, h5, h6, p{
 
     .hr, .min, .sc{
         display: flex;
-        // align-items: center;
         justify-content: center;
-        // position: absolute;
+        position: absolute;
         border-radius: 50%;
 
     }
@@ -74,6 +72,7 @@ h1, h2, h3, h4, h5, h6, p{
         height: 80px;
         background: #ff105e;
         border-radius: 6px 6px 0 0;
+        z-index: 8;
     }
 
     .min:before{
@@ -81,7 +80,7 @@ h1, h2, h3, h4, h5, h6, p{
         position: absolute;
         width: 4px;
         height: 90px;
-        background: #fff;
+        background: rgb(126, 126, 243);
         border-radius: 6px 6px 0 0;
         z-index: 10;
     }
@@ -91,7 +90,7 @@ h1, h2, h3, h4, h5, h6, p{
         position: absolute;
         width: 2px;
         height: 150px;
-        background: #fff;
+        background: rgb(172, 169, 169);
         border-radius: 6px 6px 0 0;
         z-index: 12;
     }
