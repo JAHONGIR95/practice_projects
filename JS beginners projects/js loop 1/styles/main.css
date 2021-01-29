@@ -33,5 +33,19 @@ body {
   height: 50px;
   overflow: hidden;
   border-radius: 5px;
+  display: none;
+}
+
+.active {
+  background-color: blue;
+}
+
+@media only screen and (max-width: 768px) {
+  #select {
+    display: block;
+  }
+  .button-wrapper {
+    display: none;
+  }
 }
 /*# sourceMappingURL=main.css.map */
