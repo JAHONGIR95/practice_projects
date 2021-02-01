@@ -1,0 +1,19 @@
+#result li, #result2 li, #result3 li {
+  list-style: none;
+  font-size: 22px;
+}
+
+#result h1, #result2 h1, #result3 h1 {
+  color: #1bc01b;
+}
+
+.all {
+  padding-right: 25px;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+}
+/*# sourceMappingURL=main.css.map */

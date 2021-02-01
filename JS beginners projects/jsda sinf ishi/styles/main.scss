@@ -1,0 +1,15 @@
+#result, #result2, #result3 {
+    li{
+        list-style: none;
+        font-size: 22px;
+    }
+    h1{
+        color: rgb(27, 192, 27);
+    }
+}
+
+.all{
+    padding-right: 25px;
+    display: flex;
+    justify-content: space-between;
+}
