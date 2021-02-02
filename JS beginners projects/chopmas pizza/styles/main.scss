@@ -2,4 +2,124 @@ body{
     font-family: 'Roboto', sans-serif;
     margin: 0;
     padding: 0;
+    background-image: url(../images/pizza.jpg);
+    background-repeat: no-repeat;
+    background-position: center;
+    background-size: cover;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    height: 100vh;
+}
+
+h1, h2, h3, h4, h5, h6, p{
+    margin: 0;
+    padding: 0;
+}
+
+main{
+    background-color: rgba(0, 0, 0, .5);
+    width: 700px;
+    border-radius: 8px;
+    padding: 30px 45px;
+    box-sizing: border-box;
+    color: #ece2e2;
+
+    .title{
+        font-size: 25px;
+        font-weight: 400;
+        text-align: center;
+        margin-bottom: 20px;
+    }
+
+}
+
+.section-title{
+    font-size: 16px;
+    font-weight: 500;
+    color: #ffffff;
+}
+
+#bread-type{
+    margin-top: 10px;
+    width: 160px;
+    padding: 3px 5px;
+    border-radius: 5px;
+    background: none;
+    margin-bottom: 25px;
+    background-color: rgba(199, 166, 166, .8);
+}
+
+.radius{
+    display: flex;
+    
+    button{
+        width: 65px;
+        height: 65px;
+        border-radius: 50%;
+        border: 1px solid green;
+        outline: none;
+        margin-right: 15px;
+        margin-top: 20px;
+        background: none;
+        background-color: rgba(199, 166, 166, .5);
+        color: #fff;
+        margin-bottom: 25px;
+        cursor: pointer;
+    }
+}
+
+.ustiga{
+    display: flex;
+    margin-top: 20px;
+    margin-bottom: 15px;
+
+    &__left{
+        margin-right: 45px;
+    }
+
+}
+
+.row-ustiga{
+    margin-bottom: 5px;
+}
+
+.qoshimcha{
+    margin-top: 15px;
+    display: flex;
+
+    .row-ustiga-left{
+        margin-right: 68px;
+    }
+}
+
+#form{
+    display: flex;
+    justify-content: space-between;
+
+    .form-right{
+        padding-left: 25px;
+        border-left: 1px solid #fff;
+        display: flex;
+        flex-direction: column;
+        // justify-content: flex-start;
+        align-items: flex-start;
+    }
+}
+
+.non-result,
+.size-result{
+    margin-bottom: 15px;
+}
+
+.ustida-result{
+    margin-bottom: 5px;
+}
+
+#submit-btn{
+    padding: 10px 12px;
+    border: none;
+    outline: none;
+    background: #FC6445;
+    color: rgb(245, 238, 238);
 }

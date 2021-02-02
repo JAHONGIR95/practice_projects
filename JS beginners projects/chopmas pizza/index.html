@@ -10,9 +10,10 @@
     <link rel="stylesheet" href="styles/main.css">
     <title>Pizza</title>
 </head>
-<body>
 
-    <h4 class="title">
+<body>
+    <main>
+        <h4 class="title">Pitsa buyurtma qilish</h4>
         <form action="" id="form">
             <div class="form-left">
                 <p class="section-title">
@@ -37,66 +38,67 @@
                 <div class="ustiga">
                     <div class="ustiga__left">
                         <div class="row-ustiga">
-                            <input type="checkbox" name="" id="item-ustiga">
-                            <label for="item-ustiga">Pomidor</label>
+                            <input class="item-ustiga" type="checkbox" name="1" id="item-ustiga1">
+                            <label for="item-ustiga1">Pomidor</label>
                         </div>
                         <div class="row-ustiga">
-                            <input type="checkbox" name="" id="item-ustiga">
-                            <label for="item-ustiga">Pomidor</label>
+                            <input class="item-ustiga" type="checkbox" name="2" id="item-ustiga2">
+                            <label for="item-ustiga2">Kurcha go'shti</label>
                         </div>
                         <div class="row-ustiga">
-                            <input type="checkbox" name="" id="item-ustiga">
-                            <label for="item-ustiga">Pomidor</label>
+                            <input class="item-ustiga" type="checkbox" name="3" id="item-ustiga3">
+                            <label for="item-ustiga3">Zaytun</label>
                         </div>
                     </div>
                     <div class="ustiga__right">
                         <div class="row-ustiga">
-                            <input type="checkbox" name="" id="item-ustiga">
-                            <label for="item-ustiga">Pomidor</label>
+                            <input class="item-ustiga" type="checkbox" name="4" id="item-ustiga4">
+                            <label for="item-ustiga4">Tuzlangan bodring</label>
                         </div>
                         <div class="row-ustiga">
-                            <input type="checkbox" name="" id="item-ustiga">
-                            <label for="item-ustiga">Pomidor</label>
+                            <input class="item-ustiga" type="checkbox" name="5" id="item-ustiga5">
+                            <label for="item-ustiga5">Qo'ziqorin</label>
                         </div>
                         <div class="row-ustiga">
-                            <input type="checkbox" name="" id="item-ustiga">
-                            <label for="item-ustiga">Pomidor</label>
+                            <input class="item-ustiga" type="checkbox" name="6" id="item-ustiga6">
+                            <label for="item-ustiga6">Qazi</label>
                         </div>
                     </div>
                 </div>
                 <p class="section-title">
-    
+                    Qo'shimcha
                 </p>
                 <div class="qoshimcha">
-                    <div class="row-ustiga">
+                    <div class="row-ustiga-left">
                         <input type="checkbox" name="" id="item-ustiga">
-                        <label for="item-ustiga">Pomidor</label>
+                        <label for="item-ustiga">Achchiq</label>
                     </div>
                     <div class="row-ustiga">
                         <input type="checkbox" name="" id="item-ustiga">
-                        <label for="item-ustiga">Pomidor</label>
+                        <label for="item-ustiga">Sosiskali</label>
                     </div>
                 </div>
             </div>
 
             <div class="form-right">
-                <p class="section-title non-result">Non: <span id="bread-result"></span></p>
-                <p class="section-title size-result">Kattaligi: <span id="kattaligi-result"></span></p>
+                <p class="section-title non-result">Non : <span id="bread-result"></span></p>
+                <p class="section-title size-result">Kattaligi : <span id="kattaligi-result"></span></p>
+                <p class="section-title ustida-result">Ustida : </p>
                 <ul id="ustida-result">
-                    <p class="section-title">Ustida:</p>
 
                 </ul>
+                <p class="section-title">Qo'shimcha</p>
                 <ul id="qushimcha">
-                    <p class="section-title">Qo'shimcha</p>
 
                 </ul>
 
-                <button type="submit">Buyurtma berish</button>
+                <button type="submit" id="submit-btn">Buyurtma berish</button>
             </div>
-            
-            
+
+
         </form>
-    </h4>
+
+    </main>
 
 
 
