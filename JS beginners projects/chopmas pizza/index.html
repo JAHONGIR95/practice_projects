@@ -1,0 +1,107 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="preconnect" href="https://fonts.gstatic.com">
+    <link href="https://fonts.googleapis.com/css2?family=Roboto:wght@400;500;700&display=swap" rel="stylesheet">
+    <!-- <link rel="stylesheet" href="libs/bootstrap/bootstrap.min.css"> -->
+    <link rel="stylesheet" href="styles/main.css">
+    <title>Pizza</title>
+</head>
+<body>
+
+    <h4 class="title">
+        <form action="" id="form">
+            <div class="form-left">
+                <p class="section-title">
+                    Noni qanday bo'lsin?
+                </p>
+                <select name="bread_type" id="bread-type">
+                    <option value="yupqa">Yupqa</option>
+                    <option value="ortacha">O'rtacha</option>
+                    <option value="qalin">Qalin</option>
+                </select>
+                <p class="section-title">
+                    Kattaligi
+                </p>
+                <div class="radius">
+                    <button class="button-round">25 cm</button>
+                    <button class="button-round">30 cm</button>
+                    <button class="button-round">35 cm</button>
+                </div>
+                <p class="section-title">
+                    Ustiga nima solaylik?
+                </p>
+                <div class="ustiga">
+                    <div class="ustiga__left">
+                        <div class="row-ustiga">
+                            <input type="checkbox" name="" id="item-ustiga">
+                            <label for="item-ustiga">Pomidor</label>
+                        </div>
+                        <div class="row-ustiga">
+                            <input type="checkbox" name="" id="item-ustiga">
+                            <label for="item-ustiga">Pomidor</label>
+                        </div>
+                        <div class="row-ustiga">
+                            <input type="checkbox" name="" id="item-ustiga">
+                            <label for="item-ustiga">Pomidor</label>
+                        </div>
+                    </div>
+                    <div class="ustiga__right">
+                        <div class="row-ustiga">
+                            <input type="checkbox" name="" id="item-ustiga">
+                            <label for="item-ustiga">Pomidor</label>
+                        </div>
+                        <div class="row-ustiga">
+                            <input type="checkbox" name="" id="item-ustiga">
+                            <label for="item-ustiga">Pomidor</label>
+                        </div>
+                        <div class="row-ustiga">
+                            <input type="checkbox" name="" id="item-ustiga">
+                            <label for="item-ustiga">Pomidor</label>
+                        </div>
+                    </div>
+                </div>
+                <p class="section-title">
+    
+                </p>
+                <div class="qoshimcha">
+                    <div class="row-ustiga">
+                        <input type="checkbox" name="" id="item-ustiga">
+                        <label for="item-ustiga">Pomidor</label>
+                    </div>
+                    <div class="row-ustiga">
+                        <input type="checkbox" name="" id="item-ustiga">
+                        <label for="item-ustiga">Pomidor</label>
+                    </div>
+                </div>
+            </div>
+
+            <div class="form-right">
+                <p class="section-title non-result">Non: <span id="bread-result"></span></p>
+                <p class="section-title size-result">Kattaligi: <span id="kattaligi-result"></span></p>
+                <ul id="ustida-result">
+                    <p class="section-title">Ustida:</p>
+
+                </ul>
+                <ul id="qushimcha">
+                    <p class="section-title">Qo'shimcha</p>
+
+                </ul>
+
+                <button type="submit">Buyurtma berish</button>
+            </div>
+            
+            
+        </form>
+    </h4>
+
+
+
+    <!-- <script src="libs/bootstrap/bootstrap.min.js"></script> -->
+    <script src="scripts/main.js"></script>
+</body>
+
+</html>
