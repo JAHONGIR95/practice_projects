@@ -95,14 +95,12 @@ var result2 = document.querySelector('#result2');
 var result3 = document.querySelector('#result3');
 
 
-
+var max;
 function reytingBoylar(myArr, place) {
     for (i = 0; i < myArr.length; i++) {
-
-        var listItem = document.createElement('li');
-        place.appendChild(listItem);
-
-        listItem.textContent = `${i + 1}. ${myArr[i].name} have  $ ${myArr[i].wealth}`;
+            var listItem = document.createElement('li');
+            place.appendChild(listItem); 
+            listItem.textContent = `${i + 1}. ${myArr[i].name} boyda bor  $ ${myArr[i].wealth}`;
     }
 }
 
@@ -110,12 +108,14 @@ reytingBoylar(boylar, result);
 reytingBoylar(kichikBoylar, result2);
 reytingBoylar(kambagalBoylar, result3);
 
-// var fullname = "Jakhongir Sagdullaev";
+// ikkinchi task
 
-// for(i = 0; i < fullname.length; i++){
-//     var litter = fullname[i].charCodeAt();
+var fullname = "Jakhongir Sagdullaev";
 
-//     if(litter >= 65 && litter <= 90){
-//         console.log(fullname[i]);
-//     }
-// }
+for(i = 0; i < fullname.length; i++){
+    var litter = fullname[i].charCodeAt();
+
+    if(litter >= 65 && litter <= 90){
+        console.log(fullname[i]);
+    }
+}
