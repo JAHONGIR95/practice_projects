@@ -62,7 +62,7 @@ main .title {
   display: flex;
 }
 
-.radius button {
+.radius .button-round {
   width: 65px;
   height: 65px;
   border-radius: 50%;
@@ -75,6 +75,10 @@ main .title {
   color: #fff;
   margin-bottom: 25px;
   cursor: pointer;
+}
+
+.red-bg {
+  background-color: #FC6445;
 }
 
 .ustiga {
