@@ -28,7 +28,7 @@ ul {
 }
 
 ul li {
-  margin: 0;
+  margin-left: -10px;
   padding: 0;
 }
 
@@ -72,6 +72,7 @@ main .title {
 }
 
 .radius .button-round {
+  display: block;
   width: 65px;
   height: 65px;
   border-radius: 50%;
@@ -127,7 +128,7 @@ main .title {
 }
 
 #form .form-right {
-  width: 25%;
+  width: 30%;
   padding-left: 25px;
   border-left: 1px solid #fff;
   display: -webkit-box;
@@ -157,5 +158,12 @@ main .title {
   outline: none;
   background: #FC6445;
   color: #f5eeee;
+  cursor: pointer;
+  -webkit-transition: all ease .5s;
+  transition: all ease .5s;
+}
+
+#submit-btn:hover {
+  background: #eb4e2e;
 }
 /*# sourceMappingURL=main.css.map */

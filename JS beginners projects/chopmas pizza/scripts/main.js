@@ -11,10 +11,14 @@ let ustigaResult = document.querySelector('#ustida-result');
 
 let ustigaArr = ['Pomidor', 'Kurka go\'shti', 'Zaytun', 'Tuzlangan bodring', 'Qo\'ziqorin', 'Qazi'];
 
-let qoshimchaItems = document.querySelectorAll('#item-qoshimcha');
+let qoshimchaItems = document.querySelectorAll('.item-qoshimcha');
 let qoshimchaResult = document.querySelector('#qushimcha');
 
 
+
+form.addEventListener('submit', function(){
+    this.reset();
+})
 
 // first initial for bread type
 breadResult.textContent = breadType.value;
@@ -31,11 +35,11 @@ function radiusSelector(value) {
         } else {
             item.classList.add('red-bg');
         }
-        console.log(item.dataset.value);
     })
 }
 
 function ustigaSelector() {
+    ustigaResult.innerHTML = '';
     ustigaItems.forEach(item => {
         if (item.checked) {
             let ustigaListItem = document.createElement('li');
@@ -48,8 +52,15 @@ function ustigaSelector() {
 }
 
 function qoshimchaSelector(){
+    qoshimchaResult.innerHTML = '';
     qoshimchaItems.forEach(item => {
-        if
+        if (item.checked) {
+            let qoshimchaListItem = document.createElement('li');
+            qoshimchaListItem.textContent = `${item.value}`;
+            qoshimchaResult.appendChild(qoshimchaListItem);
+        } else {
+            // ustigaListItem.replace()           
+        }
     })
 }
 
@@ -58,7 +69,7 @@ function qoshimchaSelector(){
 breadType.addEventListener('change', breadTypeChanger);
 
 radiusButtons.forEach(item => {
-    item.addEventListener('click', function (e) {
+    item.addEventListener('click', function(e){
         e.preventDefault();
 
         radiusSelector(item.dataset.value);
@@ -66,10 +77,16 @@ radiusButtons.forEach(item => {
     })
 })
 
+
 ustigaItems.forEach(item => {
-    item.addEventListener('change', function () {
+    item.addEventListener('change', function() {
         ustigaSelector();
     })
 })
 
+qoshimchaItems.forEach(item => {
+    item.addEventListener('change', function() {
+        qoshimchaSelector();
+    })
+})
 
