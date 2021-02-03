@@ -1,0 +1,18 @@
+body {
+  height: 300vh;
+}
+
+.block {
+  width: 25px;
+  height: 25px;
+  position: absolute;
+  right: 50px;
+  bottom: 50px;
+  background-color: red;
+  display: none;
+}
+
+.block.active {
+  display: block;
+}
+/*# sourceMappingURL=main.css.map */
