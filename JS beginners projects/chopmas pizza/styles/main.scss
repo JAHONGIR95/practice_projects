@@ -17,6 +17,14 @@ h1, h2, h3, h4, h5, h6, p{
     padding: 0;
 }
 
+ul{
+  list-style: none;
+  li{
+      margin: 0;
+      padding: 0;
+  }
+}
+
 main{
     background-color: rgba(0, 0, 0, .5);
     width: 700px;
@@ -66,10 +74,11 @@ main{
         color: #fff;
         margin-bottom: 25px;
         cursor: pointer;
+        
+        &.red-bg{
+            background-color: #FC6445;
+        }
     }
-}
-.red-bg{
-    background-color: #FC6445;
 }
 
 .ustiga{
@@ -101,6 +110,7 @@ main{
     justify-content: space-between;
 
     .form-right{
+        width: 25%;
         padding-left: 25px;
         border-left: 1px solid #fff;
         display: flex;

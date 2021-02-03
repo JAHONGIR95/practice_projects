@@ -23,6 +23,15 @@ h1, h2, h3, h4, h5, h6, p {
   padding: 0;
 }
 
+ul {
+  list-style: none;
+}
+
+ul li {
+  margin: 0;
+  padding: 0;
+}
+
 main {
   background-color: rgba(0, 0, 0, 0.5);
   width: 700px;
@@ -77,7 +86,7 @@ main .title {
   cursor: pointer;
 }
 
-.red-bg {
+.radius .button-round.red-bg {
   background-color: #FC6445;
 }
 
@@ -118,6 +127,7 @@ main .title {
 }
 
 #form .form-right {
+  width: 25%;
   padding-left: 25px;
   border-left: 1px solid #fff;
   display: -webkit-box;
