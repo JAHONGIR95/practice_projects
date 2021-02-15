@@ -1,0 +1,96 @@
+body {
+  margin: 0;
+  padding: 0;
+}
+
+.body {
+  margin: 0;
+  padding: 0;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  -ms-flex-pack: distribute;
+      justify-content: space-around;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  height: 0;
+  overflow: hidden;
+  -webkit-transition: all ease .5s;
+  transition: all ease .5s;
+  -webkit-transform-origin: center;
+          transform-origin: center;
+  background-color: rgba(235, 56, 56, 0.548);
+}
+
+.body.active {
+  height: 100vh;
+}
+
+h2 {
+  padding: 0;
+  margin: 0;
+  font-size: 35px;
+  font-family: sans-serif;
+}
+
+header {
+  padding: 15px;
+  border: 1px solid #fff;
+}
+
+.buttons {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  padding: 15px;
+  border-radius: 5px;
+  border: 1px solid #fff;
+}
+
+.buttons .btn {
+  width: 80px;
+  height: 80px;
+  margin-right: 15px;
+  border: none;
+  outline: none;
+  border-radius: 5px;
+  -webkit-transition: all ease .5s;
+  transition: all ease .5s;
+}
+
+.buttons .btn:hover {
+  opacity: .6;
+}
+
+.buttons .btn:last-child {
+  margin-right: 0;
+  background-color: orange;
+}
+
+.buttons .btn:nth-child(1) {
+  background-color: red;
+}
+
+.buttons .btn:nth-child(2) {
+  background-color: yellow;
+}
+
+.buttons .btn:nth-child(3) {
+  background-color: blue;
+}
+
+.buttons .btn:nth-child(4) {
+  background-color: green;
+}
+/*# sourceMappingURL=main.css.map */
