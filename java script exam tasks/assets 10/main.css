@@ -1,0 +1,66 @@
+body {
+  margin: 0;
+  padding: 0;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  height: 100vh;
+}
+
+main {
+  width: 300px;
+  padding: 25px;
+  background-color: #cccccc;
+}
+
+main #form {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+  margin-bottom: 15px;
+  padding-bottom: 20px;
+  border-bottom: 1px solid #000;
+}
+
+main #form input {
+  padding: 10px;
+  border: none;
+  border-bottom: 1px solid #000;
+}
+
+main #form input:focus {
+  outline: none;
+}
+
+main #form #junatish {
+  padding: 15px;
+}
+
+main .area {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -ms-flex-wrap: wrap;
+      flex-wrap: wrap;
+}
+
+main .area .balls {
+  margin-right: 10px;
+  margin-bottom: 10px;
+  width: 50px;
+  height: 50px;
+  border-radius: 50%;
+  text-align: center;
+  display: block;
+  background-color: orange;
+}
+/*# sourceMappingURL=main.css.map */

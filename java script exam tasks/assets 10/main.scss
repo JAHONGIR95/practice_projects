@@ -1,0 +1,54 @@
+body{
+    margin: 0;
+    padding: 0;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    height: 100vh;
+}
+
+main{
+    width: 300px;
+    padding: 25px;
+    background-color: #cccccc;
+
+    #form{
+        display: flex;
+        justify-content: space-between;
+        margin-bottom: 15px;
+        padding-bottom: 20px;
+        border-bottom: 1px solid #000;
+
+        input{
+            padding: 10px;
+            border: none;
+            border-bottom: 1px solid #000;
+
+            &:focus{
+                outline: none;
+            }
+        }
+
+        #junatish{
+            padding: 15px;
+        }
+    }
+
+    .area{
+        display: flex;
+        flex-wrap: wrap;
+
+        .balls{
+            margin-right: 10px;
+            margin-bottom: 10px;
+            width: 50px;
+            height: 50px;
+            border-radius: 50%;
+            text-align: center;
+            display: block;
+            // align-items: center;
+            // justify-content: center;
+            background-color: orange;
+        }
+    }
+}
