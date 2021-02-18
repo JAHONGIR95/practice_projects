@@ -1,0 +1,48 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="preconnect" href="https://fonts.gstatic.com">
+<link href="https://fonts.googleapis.com/css2?family=Roboto:wght@400;500;700&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="main.css">
+    <title>Project 2</title>
+</head>
+<body>
+    <div class="container">
+        <h2 class="page-title">Movies catalog</h2>
+        <main>
+            <aside>
+                <form action="#" method="GET" id="form">
+                    <input type="text" name="movie_name" placeholder="Movie name" id="movie-name">
+                    <input type="number" name="movie_rayting_point" placeholder="Movie rayting point" id="movie-rayting-point">
+                    <select name="genre" id="movie-genre">
+                        <option value="fantacy">Fantacy</option>
+                        <option value="comedy">Comedy</option>
+                        <option value="action">Action</option>
+                        <option value="drame">Drama</option>
+                        <option value="romantic">Romantic</option>
+                    </select>
+                    <select name="rating_type" id="rating-type">
+                        <option value="high-to-low">Rating (high to low)</option>
+                        <option value="low-to-high">Rating (low to high)</option>
+                        <option value="a-z">A-Z</option>
+                        <option value="z-a">Z-A</option>
+                    </select>
+                    <button type="submit" id="submit-button">Search</button>
+                </form>
+                <h2 class="page-title">Bookmarked movies</h2>
+            </aside>
+            <div class="result-section">
+                <p class="result">search result</p>
+            </div>
+        </main>
+
+    </div>
+    
+
+
+    <script src="main.js"></script>
+</body>
+</html>
