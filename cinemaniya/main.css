@@ -33,6 +33,8 @@ h1, h2, h3, h4, h5, h6, p {
 .container .page-title {
   font-size: 24px;
   font-weight: normal;
+  text-align: center;
+  margin-bottom: 30px;
 }
 
 .container main {
@@ -45,5 +47,67 @@ h1, h2, h3, h4, h5, h6, p {
   -webkit-box-align: start;
       -ms-flex-align: start;
           align-items: flex-start;
+}
+
+.container main aside {
+  width: 25%;
+}
+
+.container main aside form {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  width: 100%;
+}
+
+.container main aside form input {
+  padding: 8px 20px;
+  margin-bottom: 20px;
+  border-radius: 5px;
+  border: 2px solid #c0c0c0;
+  font-size: 15px;
+  color: #000;
+}
+
+.container main aside form input:placeholder {
+  color: #000;
+}
+
+.container main aside form input:focus {
+  outline: none;
+}
+
+.container main aside form select {
+  margin-bottom: 20px;
+  padding: 8px 20px;
+  border-radius: 5px;
+  border: 2px solid #c0c0c0;
+  font-size: 15px;
+  color: #000;
+}
+
+.container main aside form button {
+  padding: 12px 20px;
+  font-size: 17px;
+  color: #fffccc;
+  letter-spacing: 1px;
+  background-color: #6666f3;
+  border: none;
+  border-radius: 5px;
+  -webkit-transition: all ease .2s;
+  transition: all ease .2s;
+}
+
+.container main aside form button:active {
+  -webkit-transform: scale(0.99);
+          transform: scale(0.99);
+}
+
+.container main aside form button:focus {
+  outline: none;
 }
 /*# sourceMappingURL=main.css.map */

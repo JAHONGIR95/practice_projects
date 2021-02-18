@@ -27,7 +27,8 @@ h1, h2, h3, h4, h5, h6, p{
     .page-title{
         font-size: 24px;
         font-weight: normal;
-
+        text-align: center;
+        margin-bottom: 30px;
     }
 
     main{
@@ -36,7 +37,57 @@ h1, h2, h3, h4, h5, h6, p{
         align-items: flex-start;
 
         aside{
-            
+            width: 25%;
+
+            form{
+                display: flex;
+                flex-direction: column;
+                width: 100%;
+                
+                input{
+                    padding: 8px 20px;
+                    margin-bottom: 20px;
+                    border-radius: 5px;
+                    border: 2px solid #c0c0c0;
+                    font-size: 15px;
+                    color: #000;
+
+                    &:placeholder{
+                        color: #000;
+                    }
+
+                    &:focus{
+                        outline: none
+                    }
+                }
+
+                select{
+                    margin-bottom: 20px;
+                    padding: 8px 20px;
+                    border-radius: 5px;
+                    border: 2px solid #c0c0c0;
+                    font-size: 15px;
+                    color: #000;
+                }
+
+                button{
+                    padding: 12px 20px;
+                    font-size: 17px;
+                    color: #fffccc;
+                    letter-spacing: 1px;
+                    background-color: rgb(102, 102, 243);
+                    border: none;
+                    border-radius: 5px;
+                    transition: all ease .2s;
+
+                    &:active{
+                        transform: scale(.99);
+                    }
+                    &:focus{
+                        outline: none;
+                    }
+                }
+            }
         }
     }
 }
