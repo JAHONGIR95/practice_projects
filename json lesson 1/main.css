@@ -11,8 +11,8 @@ h1, h2, h3, h4, h5, h6, p, ul, li {
 }
 
 .container {
-  max-width: 1140px;
   width: 100%;
+  max-width: 1140px;
   padding-right: 15px;
   padding-left: 15px;
   margin-right: auto;
@@ -35,6 +35,32 @@ h1, h2, h3, h4, h5, h6, p, ul, li {
           transform: translateY(-100%);
   -webkit-transition: all ease .5s;
   transition: all ease .5s;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+}
+
+.modal .modal-title {
+  color: #fff;
+  z-index: 2;
+  text-transform: capitalize;
+}
+
+.modal .modal-name {
+  color: #fff;
+  z-index: 2;
+  text-transform: capitalize;
+  margin-bottom: 30px;
 }
 
 .todos {
@@ -48,16 +74,18 @@ h1, h2, h3, h4, h5, h6, p, ul, li {
           flex-direction: column;
 }
 
-.todos a {
-  display: inline;
+.todos .links {
+  display: inline-block;
   text-decoration: none;
   margin-bottom: 1px;
   color: #111;
   -webkit-transition: all ease .5s;
   transition: all ease .5s;
+  font-size: 18px;
+  padding: 0;
 }
 
-.todos a:hover {
+.todos .links:hover {
   color: blue;
 }
 /*# sourceMappingURL=main.css.map */
