@@ -115,4 +115,12 @@ h1, h2, h3, h4, h5, h6, p {
   font-size: 30px;
   margin-top: 0;
 }
+
+.result-section {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -ms-flex-wrap: wrap;
+      flex-wrap: wrap;
+}
 /*# sourceMappingURL=main.css.map */
