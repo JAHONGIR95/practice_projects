@@ -2,15 +2,6 @@
 body {
   margin: 0;
   padding: 0;
-  display: -webkit-box;
-  display: -ms-flexbox;
-  display: flex;
-  -webkit-box-align: center;
-      -ms-flex-align: center;
-          align-items: center;
-  -webkit-box-pack: center;
-      -ms-flex-pack: center;
-          justify-content: center;
   height: 100vh;
   overflow: hidden;
   font-family: 'Roboto', sans-serif;
@@ -35,6 +26,7 @@ h1, h2, h3, h4, h5, h6, p {
   font-weight: normal;
   text-align: center;
   margin-bottom: 30px;
+  margin-top: 40px;
 }
 
 .container main {
@@ -50,7 +42,7 @@ h1, h2, h3, h4, h5, h6, p {
 }
 
 .container main aside {
-  width: 25%;
+  width: 30%;
 }
 
 .container main aside form {
@@ -98,6 +90,8 @@ h1, h2, h3, h4, h5, h6, p {
   background-color: #6666f3;
   border: none;
   border-radius: 5px;
+  cursor: pointer;
+  margin-bottom: 30px;
   -webkit-transition: all ease .2s;
   transition: all ease .2s;
 }
@@ -105,9 +99,20 @@ h1, h2, h3, h4, h5, h6, p {
 .container main aside form button:active {
   -webkit-transform: scale(0.99);
           transform: scale(0.99);
+  opacity: .8;
+}
+
+.container main aside form button:hover {
+  background-color: #4444f3;
 }
 
 .container main aside form button:focus {
   outline: none;
+}
+
+.container main aside .page-title {
+  text-align: start;
+  font-size: 30px;
+  margin-top: 0;
 }
 /*# sourceMappingURL=main.css.map */
