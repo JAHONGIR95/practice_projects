@@ -3,14 +3,58 @@
 body{
     margin: 0;
     padding: 0;
-    display: flex;
-    align-items: center;
-    justify-content: center;
-    height: 100vh;
-    overflow: hidden;
+    // display: flex;
+    // align-items: center;
+    // justify-content: center;
+    // height: 100vh;
+    // overflow: hidden;
+    position: relative;
 }
 
-h1, h2, h3, h4, h5, h6, p{
+h1, h2, h3, h4, h5, h6, p, ul, li{
     margin: 0;
     padding: 0;
+}
+
+.container{
+    max-width: 1140px;
+    width: 100%;
+    padding-right: 15px;
+    padding-left: 15px;
+    margin-right: auto;
+    margin-left: auto;
+}
+
+.modal{
+    position: absolute;
+    top: 0;
+    right: 0;
+    left: 0;
+    margin: auto;
+    z-index: 1;
+    width: 50%;
+    height: 300px;
+    padding: 20px;
+    background-color: rgba(0, 0, 0, 0.651);
+    border-radius: 0 0 15px 15px;
+    transform: translateY(-100%);
+    transition: all ease .5s;   
+}
+
+.todos{
+    padding-top: 50px;
+    display: flex;
+    flex-direction: column;
+
+    a{
+        display: inline;
+        text-decoration: none;
+        margin-bottom: 1px;
+        color: #111;
+        transition: all ease .5s;
+
+        &:hover{
+            color: blue;
+        }
+    }
 }

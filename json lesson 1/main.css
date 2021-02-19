@@ -2,21 +2,62 @@
 body {
   margin: 0;
   padding: 0;
+  position: relative;
+}
+
+h1, h2, h3, h4, h5, h6, p, ul, li {
+  margin: 0;
+  padding: 0;
+}
+
+.container {
+  max-width: 1140px;
+  width: 100%;
+  padding-right: 15px;
+  padding-left: 15px;
+  margin-right: auto;
+  margin-left: auto;
+}
+
+.modal {
+  position: absolute;
+  top: 0;
+  right: 0;
+  left: 0;
+  margin: auto;
+  z-index: 1;
+  width: 50%;
+  height: 300px;
+  padding: 20px;
+  background-color: rgba(0, 0, 0, 0.651);
+  border-radius: 0 0 15px 15px;
+  -webkit-transform: translateY(-100%);
+          transform: translateY(-100%);
+  -webkit-transition: all ease .5s;
+  transition: all ease .5s;
+}
+
+.todos {
+  padding-top: 50px;
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
-  -webkit-box-align: center;
-      -ms-flex-align: center;
-          align-items: center;
-  -webkit-box-pack: center;
-      -ms-flex-pack: center;
-          justify-content: center;
-  height: 100vh;
-  overflow: hidden;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
 }
 
-h1, h2, h3, h4, h5, h6, p {
-  margin: 0;
-  padding: 0;
+.todos a {
+  display: inline;
+  text-decoration: none;
+  margin-bottom: 1px;
+  color: #111;
+  -webkit-transition: all ease .5s;
+  transition: all ease .5s;
+}
+
+.todos a:hover {
+  color: blue;
 }
 /*# sourceMappingURL=main.css.map */
