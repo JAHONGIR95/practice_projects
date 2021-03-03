@@ -3,6 +3,7 @@ const modal = document.querySelector('.modal');
 const modalTitle = document.querySelector('.modal-title')
 const modalName = document.querySelector('.modal-name')
 
+
 fetch('https://jsonplaceholder.typicode.com/posts').then((res) => {
     res.json().then((data) => {
         data.forEach((todo, key) => {
@@ -29,3 +30,4 @@ fetch('https://jsonplaceholder.typicode.com/posts').then((res) => {
         })
     });
 });
+console.log(links);
