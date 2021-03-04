@@ -11,11 +11,15 @@
 
     <script type="module">
 
-        import {birthYear, Human} from './library.js';
-        const h = new Human(birthYear)
+        // import {birthYear, Human} from './library.js';
+        // const h = new Human(birthYear)
 
-        console.log(h.age())
+        // console.log(h.age())
         
+
+        import {color, carAge, model, weight, Cars} from './library.js';
+        const car = new Cars(color, carAge, model, weight);
+        console.log(car.carYear());
     </script>
 </body>
 </html>
