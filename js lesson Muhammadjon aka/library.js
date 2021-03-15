@@ -23,7 +23,7 @@ class Cars{
         this.weight = weight;
     }
 
-    colorCar(){
+    carColor(){
         return this.color;
     }
 
@@ -31,19 +31,19 @@ class Cars{
         return `Manufactured year is ${this.carAge}`;
     }
 
-    modelCar(){
+    carModel(){
         return this.model;
     }
 
-    weightCar(){
+    carWeight(){
         return this.weight;
     }
 }
 
 let color = 'white';
-let carAge = 2008;
+let carYear = 2008;
 let model = 'BMW';
 let weight = '800kg';
 
-export {color, carAge, model, weight, Cars}
+export {color, carYear, model, weight, Cars}
 
