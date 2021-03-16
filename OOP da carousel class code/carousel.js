@@ -11,7 +11,9 @@ class Carousel {
             item.style.width = this.width;
             item.style.height = this.height;
             item.style.objectFit = 'cover';
-
+            if(index != this.activeElement){
+                item.style.display = 'none';
+            }
 
         })
         this.carouselChanger();
@@ -33,9 +35,11 @@ class Carousel {
         setInterval(() => {
             if(activeElementIndex < this.carouselItems.length - 1){
                 activeElementIndex++;
-
+                this.carouselFader(activeElementIndex);
             } else {
                 activeElementIndex = 0;
+                this.carouselFader(activeElementIndex);
+
             }
         }, this.time);
     }
