@@ -60,7 +60,7 @@ let axios = {
     post: function (link, params, body) {
         return new Promise(function (resolve, reject) {
 
-            console.log(body)
+            // console.log(body)
 
             let url = 'https://jsonplaceholder.typicode.com/users';
 
@@ -87,6 +87,27 @@ let axios = {
     }
 }
 
+
+form.addEventListener('submit', () => {
+    
+    // console.log(name.value);
+    
+    axios.post('https://jsonplaceholder.typicode.com/users', {}, {
+        name: name.value,
+        surname: surname.value,
+        age: age.value,
+        email: email.value,
+        city: city.value
+    })
+    .then(function (response) {
+        console.log(response);
+    }).catch(function (err) {
+        console.log(err);
+    })
+    form.reset();
+    
+})
+
 // axios.get('https://jsonplaceholder.typicode.com/users', {})
 //     .then(function (response) {
 //         console.log(response);
@@ -102,23 +123,3 @@ let axios = {
 // }).catch(function(err){
 //     console.log(err);
 // })
-
-form.addEventListener('submit', () => {
-    
-    console.log(name.value);
-    
-    axios.post('https://jsonplaceholder.typicode.com/users', {}, {
-        name: name.value,
-        surname: surname.value,
-        age: age.value,
-        email: email.value,
-        city: city.value
-    })
-        .then(function (response) {
-            console.log(response);
-        }).catch(function (err) {
-            console.log(err);
-        })
-
-        form.reset();
-})
