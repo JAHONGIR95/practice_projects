@@ -1,0 +1,1 @@
+(()=>{const e=new Animal({name:"Janet",color:"Grey",age:14});console.log(e)})();
